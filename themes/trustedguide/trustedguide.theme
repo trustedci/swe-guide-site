@@ -1,11 +1,8 @@
 [Theme]
 engine = mako
-parent = bootstrap3
+parent = jidn
 author = CTSC
 author_url = https://trustedci.org
 license = MIT
-based_on = Bootstrap 3
+based_on = jidn
 tags = bootstrap
-
-[Family]
-family = bootstrap3
