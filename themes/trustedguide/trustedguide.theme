@@ -1,0 +1,11 @@
+[Theme]
+engine = mako
+parent = bootstrap3
+author = CTSC
+author_url = https://trustedci.org
+license = MIT
+based_on = Bootstrap 3
+tags = bootstrap
+
+[Family]
+family = bootstrap3
