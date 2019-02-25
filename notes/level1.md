@@ -1,8 +1,3 @@
-[] Development status
-[] License
-
-
-
 Documenting everything as your project is built saves a lot of frustration down the road. Anyone, yourself included, should be able to build and run your code with the correct results by reading the documentation and using the tools provided. This includes documenting what tools and development libraries that are used; using a build tool such as make or waf; and default config file.  Default config files should have a short description of each variable and a default value assigned to the variable. If the variable has only a few options, such as a true/false flag, having the variable with each flag in place with one commented out is a good idea. This makes it easy for the end user to switch between the two by commenting and uncommenting the appropriate value. Documentation can also help a lot with maintaining current development status reports and changelogs.
 
 There are many options for revision control and they change often. Some functionality to look for when deciding on which revision control tool to use include:
