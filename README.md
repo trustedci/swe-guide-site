@@ -1,8 +1,6 @@
 # SWE Guide - Trusted CI
 Make the same or link to pages/index.md
 ## About
-Some text here about the project, why it exists, and what it includes.
-
 CTSC - CCoE logoLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu sapien id turpis rhoncus commodo in ac enim. Aenean sed ipsum velit. Curabitur convallis, eros non viverra rhoncus, augue dui luctus est, maximus blandit massa metus eu augue. Suspendisse vitae leo fringilla, maximus nibh quis, finibus urna. Integer dictum sed neque pulvinar dictum. Proin ornare tortor at massa sollicitudin elementum. Suspendisse vitae nunc fermentum, tristique sem ut, viverra mauris. Sed porttitor mollis imperdiet. Vivamus id porta diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum urna massa, a porta lorem pharetra nec. Integer at nisi quis risus convallis luctus. Maecenas blandit eros at lorem euismod, at bibendum orci interdum. Sed viverra ante urna.
 
 Integer sit amet suscipit massa. In dapibus ante id consequat luctus. Quisque et mi quis tortor congue varius id id felis. Nullam tristique erat sit amet mi rhoncus, in convallis purus iaculis. Morbi vel turpis aliquam, feugiat lorem ut, suscipit eros. Curabitur eu dolor id nisi fringilla blandit. Maecenas nec leo venenatis, dapibus urna rutrum, pretium magna. Aliquam vitae tortor eu leo auctor posuere eget ut ipsum. Maecenas vel leo dapibus, facilisis urna non, venenatis turpis. In faucibus nibh nec metus porta, non sodales sapien convallis. Morbi dignissim mauris non malesuada hendrerit. Phasellus pharetra libero aliquet lectus faucibus, ut posuere ipsum maximus.
@@ -15,5 +13,9 @@ Nunc posuere, dolor id dapibus rhoncus, mi sem tincidunt ipsum, non mollis enim 
 ## Table of Contents
 |Title|Author|
 |-----|------|
-|Introduction| [daemoneye](https://github.com/daemoneye)|
+|[(example entry) Outline](notes/guide_outline.md)| [daemoneye](https://github.com/daemoneye)|
+
+## Contributing Guide
+
+## Contributors
 
