@@ -1,0 +1,57 @@
+/*
+	Venue by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+/* Button */
+
+	.button {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Form */
+
+	form input[type=text],
+	form input[type=password],
+	form select,
+	form textarea {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Nav */
+
+	#nav > ul > li > span, #nav > ul > li > a {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+	.dropotron {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		.dropotron a, .dropotron span {
+			border: 0;
+		}
+
+		.dropotron.level-0 {
+			margin: 0;
+		}
+
+			.dropotron.level-0:before {
+				display: none;
+			}
+
+/* Banner */
+
+	#banner {
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+/* Newsletter */
+
+	#newsletter .text, #newsletter .submit {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}

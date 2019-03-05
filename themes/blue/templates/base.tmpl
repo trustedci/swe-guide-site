@@ -1,0 +1,243 @@
+## -*- coding: utf-8 -*-
+<%namespace name="base" file="base_helper.tmpl" import="*"/>
+<%namespace name="header" file="base_header.tmpl" import="*"/>
+<%namespace name="footer" file="base_footer.tmpl" import="*"/>
+
+${set_locale(lang)}
+
+### <html> tag is included by base.html_headstart
+${base.html_headstart()}
+
+<%block name="extra_head">
+### Leave this block alone.
+</%block>
+
+${template_hooks['extra_head']()}
+</head>
+
+<body class="homepage">
+	<div id="page-wrapper">
+	<a href="#content" class="sr-only sr-only-focusable">${messages("Skip to main content")}</a>
+	
+    ${header.html_header()}
+    
+	<!-- Banner -->
+				<div id="banner">
+					<div class="container">
+						<section>
+							<span class="image-border"><a href="#" class="image"><img src="images/bannerpic.jpg" alt="" /></a></span>
+							<header>
+								<h2>Vestib ulum auctor lorem ipsum</h2>
+								<span class="byline">Praesent dapibus neque id cursus fauctis ligula vulputate sem tristique</span>
+							</header>
+							<a href="#" class="button">Vivamus</a>
+						</section>
+					</div>
+				</div>
+
+			<!-- Featured -->
+				<div id="featured">
+					<div class="container">
+						<div class="row">
+
+							<!-- Featured 1 -->
+								<section class="4u 12u(mobile)">
+									<header>
+										<h2>Cras ornare tristique</h2>
+										<span class="byline">Ut aliquam sollicitudin</span>
+									</header>
+									<div class="box-style">
+										<p>Lorem ipsum dolor sit amet, consectetuer adiing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, damattis vel, nisi. Sed pretium ligula</p>
+									</div>
+									<a href="#" class="button">More Info</a>
+								</section>
+
+							<!-- Featured 2 -->
+								<section class="4u 12u(mobile)">
+									<header>
+										<h2>Donec quis dui at dolor</h2>
+										<span class="byline">Fusce lobortis lorem atpsu</span>
+									</header>
+									<div class="box-style">
+										<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna lorem ipsum</p>
+									</div>
+									<a href="#" class="button">More Info</a>
+								</section>
+
+							<!-- Featured 3 -->
+								<section class="4u 12u(mobile)">
+									<header>
+										<h2>Fusce pellentesque sust</h2>
+										<span class="byline">Ut aliquam sollicitudin</span>
+									</header>
+									<div class="box-style">
+										<p>Ted egestas, ante et vulputate volutpat, eros
+		semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est sed lectus</p>
+									</div>
+									<a href="#" class="button">More Info</a>
+								</section>
+
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<section>
+							<header>
+								<h2>Praesent placerat risus quis ero</h2>
+								<span class="byline">Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoree</span>
+							</header>
+							<span class="divider">&nbsp;</span>
+						</section>
+						<div class="row">
+							<section class="4u 12u(mobile)">
+								<img src="images/pic01.jpg" alt="" class="image featured" />
+								<h3>Lorem ipsum dolor</h3>
+								<span class="details">Odrerit. Pellentesque aliquet nibh nec urnaneque, aliquet vel, dapibus id</span>
+								<a href="#" class="button">More Info</a>
+							</section>
+							<section class="4u 12u(mobile)">
+								<img src="images/pic02.jpg" alt="" class="image featured" />
+								<h3>Praesent placerat risus</h3>
+								<span class="details">Sed egestas, anteadet cingcommodo vulputate volutpateros pede semper</span>
+								<a href="#" class="button">More Info</a>
+							</section>
+							<section class="4u 12u(mobile)">
+								<img src="images/pic03.jpg" alt="" class="image featured" />
+								<h3>Cras ornare tristique</h3>
+								<span class="details">Morbi purus libero, faucibus adipis cingcommodo quis gravida</span>
+								<a href="#" class="button">More Info</a>
+							</section>
+						</div>
+					</div>
+				</div>
+
+			<!-- Portfolio -->
+				<div id="portfolio">
+					<div class="container">
+
+						<section>
+							<header>
+								<h2>Urnamin dapi</h2>
+							</header>
+						</section>
+
+						<!-- Author 1 -->
+							<div class="row">
+
+								<section class="5u 12u(mobile)">
+									<div class="pbox1">
+										<div class="author">
+											<h3>Amanda Doe</h3>
+											<span>CEO</span>
+										</div>
+										<div class="network">
+											<ul class="social">
+												<li><a href="#" class="icon fa-facebook"><span></span></a></li>
+												<li><a href="#" class="icon fa-twitter"><span>Twitter</span></a></li>
+												<li><a href="#" class="icon fa-linkedin"><span>LinkedIn</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section class="2u 12u(mobile)">
+									<div class="pbox2">
+										<a href="#" class="image"><img src="images/placeholder.jpg" alt="" /></a>
+									</div>
+								</section>
+
+								<section class="5u 12u(mobile)">
+									<div class="pbox3"><p>Dolor sit amet consectetuer adipiscing elit. Phase llus hendrerit. Pelletesque aliquet nibh nec aliquet nibdap pellentus sitn</p></div>
+								</section>
+
+							</div>
+
+						<div class="border-style"><span class="border">&nbsp;</span></div>
+
+						<!-- Author 2 -->
+							<div class="row">
+
+								<section class="5u 12u(mobile)">
+									<div class="pbox1">
+										<div class="author">
+											<h3>John Doe</h3>
+											<span>CFO</span>
+										</div>
+										<div class="network">
+											<ul class="social">
+												<li><a href="#" class="icon fa-facebook"><span></span></a></li>
+												<li><a href="#" class="icon fa-twitter"><span>Twitter</span></a></li>
+												<li><a href="#" class="icon fa-linkedin"><span>LinkedIn</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section class="2u 12u(mobile)">
+									<div class="pbox2">
+										<a href="#" class="image"><img src="images/placeholder.jpg" alt="" /></a>
+									</div>
+								</section>
+
+								<section class="5u 12u(mobile)">
+									<div class="pbox3"><p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla</p></div>
+								</section>
+
+							</div>
+
+						<div class="border-style"><span class="border">&nbsp;</span></div>
+
+						<!-- Author 3 -->
+							<div class="row">
+
+								<section class="5u 12u(mobile)">
+									<div class="pbox1">
+										<div class="author">
+											<h3>Kate Doe</h3>
+											<span>COO</span>
+										</div>
+										<div class="network">
+											<ul class="social">
+												<li><a href="#" class="icon fa-facebook"><span></span></a></li>
+												<li><a href="#" class="icon fa-twitter"><span>Twitter</span></a></li>
+												<li><a href="#" class="icon fa-linkedin"><span>LinkedIn</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section class="2u 12u(mobile)">
+									<div class="pbox2">
+										<a href="#" class="image"><img src="images/placeholder.jpg" alt="" /></a>
+									</div>
+								</section>
+
+								<section class="5u 12u(mobile)">
+									<div class="pbox3"><p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem ullamcorpe</p></div>
+								</section>
+							</div>
+						<!-- Author 3 -->
+
+					</div>
+				</div>
+			</div>
+ 
+	${footer.html_footer()}
+	</div>
+    ${base.late_load_js()}
+	
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+    ${body_end}
+    ${template_hooks['body_end']()}
+</body>
+</html>
