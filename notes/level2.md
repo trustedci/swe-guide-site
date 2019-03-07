@@ -1,7 +1,7 @@
 [x] Review of Level 1 requirements.
 [] Use of revision control
 [] Semantic Versioning
-[] Distributing software
+[x] Distributing software
 [] Code signing
 [] Basic security policy, including vulnerability management
 [] Dependency selection
@@ -10,6 +10,8 @@
 [x] Testing
 
 For level two requirements and beyond, reviewing the specifications of previous requirements should be done. For level two, you should review the prerequisites from level 1 as we will be building on them.
+
+Distribution of software should be made as easy as possible. Aside from having a source version kept in reversion control, having folks that can update the binary in package managers is important. This will easily allow system administrators to push software updates automatically. If a project wants to be publically available, having the software in package managers will also make it easy for folks to install your software on their system. An INSTALL text file should also be included with the source code. This should give the steps to install the software and as much of it should be scripted.
 
 Having a series of tests does wonders for all developers from the early stages of writing software. It allows you to not only know when a change you make breaks something, but you can also test what happens when bad input is given. Any good testing suite will let you define two names for each test. One to break the tests into groups (such as a set of tests for a class) and the other to name each individual test. The tests should be run in it's own main file to allow the choice of the main program or tests to be built. Using a tool to automate compiling your code will make this much easier, especially with larger code bases.
 
