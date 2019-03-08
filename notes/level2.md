@@ -2,7 +2,7 @@
 [] Use of revision control
 [x] Semantic Versioning
 [x] Distributing software
-[] Code signing
+[x] Code signing
 [] Basic security policy, including vulnerability management
 [] Dependency selection
 [x] Succession
@@ -14,6 +14,8 @@ For level two requirements and beyond, reviewing the specifications of previous 
 Versioning of software comes in handy to both the users and the entire team working on the project. It allows for tracking what changes happened when. The common values for the version number is the major version, minor version, patch number. It is usually noted in that order wtih the period (.) seperating the values. The patch value is usually only used for internal tracking for the developers, but the major and minor versions are attached to the release of changes. The rate that the major and minor versions change tends to be decided upon by the project manager. However, the general rule is that minor versions are sets of small patches and a major version is when there is a major change to the code base, either with many minor changes or a big bug fix.
 
 Distribution of software should be made as easy as possible. Aside from having a source version kept in reversion control, having folks that can update the binary in package managers is important. This will easily allow system administrators to push software updates automatically. If a project wants to be publically available, having the software in package managers will also make it easy for folks to install your software on their system. An INSTALL text file should also be included with the source code. This should give the steps to install the software and as much of it should be scripted.
+
+Code signing lets people verify that the code they have has not been altered or corrupted since the source code was signed by the author(s). When choosing how to sign code, not only the certificate itself has to be trusted to verify the code is correct, but the certificate authority has to be trusted as well to verify the certificate. The common certificate authority will be built in with the operating system. However, some companies may have their own internal authority to issue the certificates. In cases of a single developer, the developer may self-sign their code. In that case, getting the public key for the certificate has to be verified from the developer. This can be done either by talking to the developer in person, or through verification of trusted people between you and the developer. Certificates should follow current cryptographic standards and have a time stamp when tne certificate expires and should no longer be trusted.
 
 When it comes for the life of the software, having other core developers who can take over as lead for the project is known as succession planning. These developers should be able to take over the lead of the project within one working day if the current project lead leaves the project. The reasons for a project lead to leave a project is quite varied, ranging from an accident on their way to the office to health issues to being pulled from the project. The person who takes over as the new project lead should have access to the entire project to do anything and have contact with anyone involved, such as developers, helpful end users, the funding agency, and any support folks.
 
