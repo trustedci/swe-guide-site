@@ -1,5 +1,5 @@
 [x] Review of Level 1 requirements.
-[] Use of revision control
+[x] Use of revision control
 [x] Semantic Versioning
 [x] Distributing software
 [x] Code signing
@@ -10,6 +10,8 @@
 [x] Testing
 
 For level two requirements and beyond, reviewing the specifications of previous requirements should be done. For level two, you should review the prerequisites from level 1 as we will be building on them.
+
+Version control should be a core part of the development process by this point. It should allow for multiple versions, or branches, of the code base, with a minimum of the stable releases branch, an unstable, but a workable branch, and a development branch. The stable release should be used by a majority of the users of the software as it is well tested and should be free of known bugs. The unstable branch can be used by the end users, especially if there is a new feature that is being introduced and has not made it to a stable release. The development branch should be for the developers only. It is a space where the developers can push their code for testing, sharing with others for help with a bug, and could have known bugs still in the code that are being fixed. Being able to push the development branch to the unstable branch and when a new release is ready, the stable relase branch. Another useful feature to have is the ability to have branches based on goals, such as each new feature or fixing a bug.
 
 Versioning of software comes in handy to both the users and the entire team working on the project. It allows for tracking what changes happened when. The common values for the version number is the major version, minor version, patch number. It is usually noted in that order wtih the period (.) seperating the values. The patch value is usually only used for internal tracking for the developers, but the major and minor versions are attached to the release of changes. The rate that the major and minor versions change tends to be decided upon by the project manager. However, the general rule is that minor versions are sets of small patches and a major version is when there is a major change to the code base, either with many minor changes or a big bug fix.
 
