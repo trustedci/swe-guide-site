@@ -3,8 +3,8 @@
 [x] Semantic Versioning
 [x] Distributing software
 [x] Code signing
-[] Basic security policy, including vulnerability management
-[] Dependency selection
+[x] Basic security policy, including vulnerability management
+[x] Dependency selection
 [x] Succession
 [x] Issue tracker
 [x] Testing
@@ -18,6 +18,8 @@ Versioning of software comes in handy to both the users and the entire team work
 Distribution of software should be made as easy as possible. Aside from having a source version kept in reversion control, having folks that can update the binary in package managers is important. This will easily allow system administrators to push software updates automatically. If a project wants to be publicly available, having the software in package managers will also make it easy for folks to install your software on their system. An INSTALL text file should also be included with the source code. This should give the steps to install the software and as much of it should be scripted.
 
 Code signing lets people verify that the code they have has not been altered or corrupted since the source code was signed by the author(s). When choosing how to sign code, not only the certificate itself has to be trusted to verify the code is correct, but the certificate authority has to be trusted as well to verify the certificate. The common certificate authority will be built in with the operating system. However, some companies may have their own internal authority to issue the certificates. In cases of a single developer, the developer may self-sign their code. In that case, getting the public key for the certificate has to be verified from the developer. This can be done either by talking to the developer in person, or through verification of trusted people between you and the developer. Certificates should follow current cryptography standards and have a time stamp when time certificate expires and should no longer be trusted.
+
+A good security policy should protect the project in the sense of not publicly releasing code vulnerabilities. Communication between the developers and the folks who found a vulnerability should be kept secure, as well as any documentation. Once a vulnerability has been patched, push the patch to become available to the public so that the users can get the fix. Understand that developers can make mistakes and no one is perfect. If a vulnerability does become public knowledge before a patch gets released, have a system in place to work with the users of the software to keep them well informed of what you are doing to mitigate the vulnerability. Good communication with your user base is important. Items to communicate with the users is the timeline for the patch to be released, what the users can do in the short term to protect their system as a temporary fix, and how they can get the patch as soon as it is released.
 
 Choosing what dependencies are required for your software to run is critical. Not only should it be able to show it is secure, it should be accessable on the target machines. Such situations could be that a dependency is not on the authorized list for a machine, the machines don't have access to the outside internet, or a user may not have access privilages on the machine to install dependencies. When it comes to dependencies that are secure, you should include it with the source package so that it can be compiled locally on the machine along with your software. Having a copy of the dependencies with your source also means you can include additional testing and other security practices with it that can be forwarded to your customers.
 
