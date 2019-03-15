@@ -6,8 +6,8 @@
 [x] Development documentation
 [x] Issue tracker management
 [x] Up and down stream communications
-[] Architectural Concerns
-[] Adding security exercises
+[x] Architectural Concerns
+[x] Adding security exercises
 
 Please start by reviewing the requirements in Levels 1 and 2. They will be built upon in this section.
 
@@ -24,3 +24,5 @@ Expanding on issue tracking from previous sections, the more control over issue 
 Communication with up and down stream folks can share findings with bugs easier. For upstream communication, look to communication with any tools required to build the source and be able to communicate with the stakeholders of the project. For downstream work, having multiple ways for folks to reach the team should be available. Internet Relay Chat, or IRC, and mailing lists are common tools as of this writing. These tools allow a live chat in IRC between developers and even between developers and users to help debug their system. Mailing lists are popular to announce releases and for archived communication. In a few cases, a blog can be nice to share what can be done with the project to get folks interested or to share new ways the project is being used.
 
 Deciding where data and structures end up should be worked out early in the design process. This is due to making such changes later in the process can be very difficult to implement. The process should start with sitting down with the developers, system administrators, and any major customers to decide what the inputs are, what the outputs are, and what limitations the software needs to meet. Then, it is possible to decide how to store and access the data. Data storage can be limited by what supporting systems are and are not allowed on a machine that will run the software. You may even be limited in terms on data is gathered from the outside world. When processing data, you may be on a slow machine in a closet, on multiple high-end machines, or somewhere in between. Knowing what limits there are can guide how the software is designed.
+
+Having security programming excersizes will help your developers think better on designing and writing code. Having an envirnment where trying different things and breaking them can help them write better software in the long run. Looking at simple code examples everyone can learn and understand quickly and then learning how they can be exploited, followed by how to rewrite the code to prevent an attack can go a long way with developers.
