@@ -1,6 +1,6 @@
 [x] Review of Level 1-2 requirements.
 [x] Revision Control and least privilege
-[] Next iteration on policy, including coding standards
+[x] Next iteration on policy, including coding standards
 [x] Automated and manual testing requirements
 [x] Automated builds
 [x] Development documentation
@@ -12,6 +12,8 @@
 Please start by reviewing the requirements in Levels 1 and 2. They will be built upon in this section.
 
 Regardless of which revision control system you go with, having the ability to control what kind of privilages a person will have. If it is a project in which you will release the source code to the general public, the general public should only have permission to get a copy of the code, but not push changes directly back to the project. If a new person wants to submit a patch, have them send the patch to someone on the project to review it and make sure it meets the project guidelines. This allows for two things to happen. First, it will let you to continue getting patches from the general public and knowing they meet the guidelines. Second, it will build a little trust between the new person and the people on the project. If the person continues to send good patches, you might be able to grant them more permissions. For the folks actively working on the project, they should have permissions to push changes to their area of the project. If a project has a client and a server element to it, each element should be in it's own revision control sandbox. However, the developers should not have privilages to totally destroy the project. Then, each project should have two or more project owners. This should prevent a situation known as "hit-by-a-bus", where the only person who has ownership cannot work on the project for any reason, ranging from home with the flu to being indeed hit by a bus and is in the hospital, or worse, the moruge.
+
+Coding standards for each project should be outline at the start of the project. This includes any conventions to make the code look uniform and easier to read. Such things can include how many spaces in a tab, the upper limit of lines for a function, how to do comments in the code, and documentation. There should also be rules on how the code is divied up into files, how the directory structure should be laid out, and who is responsible for what. It should also include how folks should submit patches and bug reports. Having guidance for everyone takes a lot of fustration out of a project.
 
 As discussed in earlier sections, having test cases is important. Usually these tests were run manually by running a binary with those test cases. This is still useful for any changes you make in the code to make sure your changes don't make something else fail elsewhere in the code. As the project grows, so do the number of tests. Eventually, you will want to have these test automated when you check in your code. The version control software used should allow for running all the tests for the entire code base when new code is added. Tests for any code you modified should be run manually, especially if you are updating the logic of a function. This way you can avoid the most common test failures: the code you just modified.
 
