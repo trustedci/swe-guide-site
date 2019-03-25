@@ -1,8 +1,0 @@
-[Theme]
-engine = mako
-parent = jidn
-author = CTSC
-author_url = https://trustedci.org
-license = MIT
-based_on = jidn
-tags = bootstrap

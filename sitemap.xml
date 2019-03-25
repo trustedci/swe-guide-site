@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <url>
+  <loc>https://swe.trustedci.org/archive.html</loc>
+  <lastmod>2019-03-25T16:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://swe.trustedci.org/blog/</loc>
+  <lastmod>2019-03-05T18:58:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://swe.trustedci.org/categories/</loc>
+  <lastmod>2019-03-05T18:58:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://swe.trustedci.org/level1/</loc>
+  <lastmod>2019-03-25T15:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://swe.trustedci.org/level2/</loc>
+  <lastmod>2019-03-25T15:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://swe.trustedci.org/level3/</loc>
+  <lastmod>2019-03-25T19:25:00Z</lastmod>
+ </url>
+</urlset>
