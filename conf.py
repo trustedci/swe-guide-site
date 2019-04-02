@@ -588,7 +588,7 @@ FRONT_INDEX_HEADER = {
 # rel_path: a relative URL to the current page/post (default)
 # full_path: a URL with the full path from the root
 # absolute: a complete URL (that includes the SITE_URL)
-# URL_TYPE = 'rel_path'
+URL_TYPE = 'full_path'
 
 # If USE_BASE_TAG is True, then all HTML files will include
 # something like <base href=http://foo.var.com/baz/bat> to help
