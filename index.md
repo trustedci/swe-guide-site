@@ -5,6 +5,7 @@
 .. tags: 
 .. category: 
 .. link: /index.html
+.. pretty_url: False
 .. description: 
 .. type: text
 -->
