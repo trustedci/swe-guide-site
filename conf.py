@@ -552,7 +552,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-INDEX_PATH = "blog"
+INDEX_PATH = "output"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -1142,7 +1142,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # INDEX_DISPLAY_POST_COUNT = 10
 
 # By default, Nikola generates RSS files for the website and for tags, and
-# links to it.  Set this to False to disable everything RSS-related.
+# links to it.  Set this to False to disable everything RSS-related.True
 # GENERATE_RSS = True
 
 # By default, Nikola does not generates Atom files for indexes and links to
