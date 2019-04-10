@@ -7,15 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://swe.trustedci.org/</loc>
-  <lastmod>2019-04-10T18:14:00Z</lastmod>
+  <lastmod>2019-04-10T18:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://swe.trustedci.org/INDEX_PATH/</loc>
+  <lastmod>2019-04-10T18:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://swe.trustedci.org/archive.html</loc>
-  <lastmod>2019-04-10T18:14:00Z</lastmod>
- </url>
- <url>
-  <loc>https://swe.trustedci.org/blog/</loc>
-  <lastmod>2019-04-04T17:42:00Z</lastmod>
+  <lastmod>2019-04-10T18:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://swe.trustedci.org/categories/</loc>
@@ -23,27 +23,15 @@
  </url>
  <url>
   <loc>https://swe.trustedci.org/comingsoon.html</loc>
-  <lastmod>2019-04-10T18:14:00Z</lastmod>
- </url>
- <url>
-  <loc>https://swe.trustedci.org/level1.html</loc>
-  <lastmod>2019-04-10T18:10:00Z</lastmod>
+  <lastmod>2019-04-10T18:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://swe.trustedci.org/level1/</loc>
   <lastmod>2019-04-04T17:42:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/level2.html</loc>
-  <lastmod>2019-04-10T18:10:00Z</lastmod>
- </url>
- <url>
   <loc>https://swe.trustedci.org/level2/</loc>
   <lastmod>2019-04-04T17:42:00Z</lastmod>
- </url>
- <url>
-  <loc>https://swe.trustedci.org/level3.html</loc>
-  <lastmod>2019-04-10T18:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://swe.trustedci.org/level3/</loc>
