@@ -1,7 +1,6 @@
 <!--
 .. title: Engineering Software for Science
 .. slug: index
-.. date: 2017-12-11 14:39:19 UTC-05:00
 .. tags: 
 .. category: 
 .. link: /index.html
