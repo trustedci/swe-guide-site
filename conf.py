@@ -21,7 +21,7 @@ BLOG_AUTHOR = "TrustedCI"  # (translatable)
 BLOG_TITLE = "TrustedCI Software Engineering Guide"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://swe.trustedci.org/"
+SITE_URL = "https://sweguide.trustedCI.org"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://swe.trustedci.org/"
@@ -134,8 +134,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("https://trustedci.org/guide", "Cybersecurity Planning Guide"),
-        ("https://trustedci.org", "CTSC Home"),
+        ("https://sweguide.trustedCI.org", "Cybersecurity Planning Guide"),
+        ("https://trustedci.org", "Trusted CI Home"),
 #        ("/archive.html", "Archive"),
 #        ("/categories/", "Tags"),
 #        ("/rss.xml", "RSS feed"),
