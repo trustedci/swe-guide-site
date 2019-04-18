@@ -21,7 +21,7 @@ BLOG_AUTHOR = "TrustedCI"  # (translatable)
 BLOG_TITLE = "TrustedCI Software Engineering Guide"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://sweguide.trustedCI.org"
+SITE_URL = "https://sweguide.trustedCI.org/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://swe.trustedci.org/"
@@ -936,7 +936,7 @@ FEED_LINKS_APPEND_QUERY = False
 #LICENSE = " CC BY 4.0 "
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
- LICENSE = """
+LICENSE = """
 # <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 # <img alt="CC BY 4.0 "
 # style="border-width:0; margin-bottom:12px;"
