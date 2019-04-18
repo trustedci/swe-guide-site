@@ -11,10 +11,10 @@
 
 The TrustedCI Software Engeneering Guide.
 
-<img src="/ctsclogo.png" width=400px alt="CTSC - CCoE logo" style="float: right; margin: 0.4em;" />
-Live Document, your input is appriciated as we continue to add content.
+<img src="/TrustedCI_logo_blue_web.svg" width=300px alt="Trusted CI logo" style="float: right; margin: 0.4em;" />
 <br>
 <br>
+Your input is appriciated as we continue to add content.
 <br>
 <br>
 <br>
