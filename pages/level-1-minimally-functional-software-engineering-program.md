@@ -1,6 +1,6 @@
 <!--
 .. title: Level 1: Minimally Functional Software Engineering Program
-.. slug: level-1
+.. slug: level-1a
 .. date: 2019-04-12 15:21:19 UTC-04:00
 .. tags: 
 .. category: 

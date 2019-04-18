@@ -1,3 +1,14 @@
+<!--
+.. title: Level 2: BASIC SOFTWARE ENGINEERING PRACTICE
+.. slug: level-2
+.. date: 2019-04-12 15:21:19 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
 For level two requirements and beyond, reviewing the specifications of previous requirements should be done. For level two, you should review the prerequisites from level 1 as we will be building on them.
 
 Version control should be a core part of the development process by this point. It should allow for multiple versions, or branches, of the code base, with a minimum of the stable releases branch, an unstable, but a workable branch, and a development branch. The stable release should be used by a majority of the users of the software as it is well tested and should be free of known bugs. The unstable branch can be used by the end users, especially if there is a new feature that is being introduced and has not made it to a stable release. The development branch should be for the developers only. It is a space where the developers can push their code for testing, sharing with others for help with a bug, and could have known bugs still in the code that are being fixed. Being able to push the development branch to the unstable branch and when a new release is ready, the stable release branch. Another useful feature to have is the ability to have branches based on goals, such as each new feature or fixing a bug.
