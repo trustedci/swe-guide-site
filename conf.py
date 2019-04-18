@@ -21,10 +21,10 @@ BLOG_AUTHOR = "TrustedCI"  # (translatable)
 BLOG_TITLE = "TrustedCI Software Engineering Guide"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://sweguide.trustedCI.org"
+SITE_URL = "https://sweguide.trustedCI.org/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "https://swe.trustedci.org/"
+# BASE_URL = "https://sweguide.trustedCI.org/"
 BLOG_EMAIL = "swe@trustedci.org"
 BLOG_DESCRIPTION = "Software Engineering guidance for reliable, robust, and secure software serving the sciences."  # (translatable)
 
@@ -134,17 +134,21 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("https://sweguide.trustedCI.org", "Cybersecurity Planning Guide"),
+        ("https://trustedci.org/guide", "Cybersecurity Planning Guide"),
         ("https://trustedci.org", "Trusted CI Home"),
-#        ("/archive.html", "Archive"),
-#        ("/categories/", "Tags"),
-#        ("/rss.xml", "RSS feed"),
+        ("/level-1/", "Level 1: the minimally functional program"),
+        ("/level-2/", "Level 2: Basic Software Engineering Practice"),
+        ("/level-3/", "Level 3: Software Engineering for Software Supporting Science Projects"),
+	("/level-4/", "Level 4: Software Engineering for high-reliability CI"),
+        ("/level-5/", "Level 5: Software Engineering for Critical CI"),
+        ("/level-6/", "Level 6: More tools and processes"),
+	("/level-7/", "Level 7: Tying it all together"),
     ),
-}
+   }
 
 # Name of the theme to use.
 #THEME = "trustedguide"
-THEME = "base"
+THEME = "blogtxt"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -314,7 +318,7 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-LOGO_URL = '/ctsclogo.png'
+LOGO_URL = '/TrustedCI_logo_blue_web.svg'
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
@@ -936,11 +940,11 @@ FEED_LINKS_APPEND_QUERY = False
 #LICENSE = " CC BY 4.0 "
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
- LICENSE = """
-# <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-# <img alt="CC BY 4.0 "
-# style="border-width:0; margin-bottom:12px;"
-# src="https://licensebuttons.net/l/by/4.0/88x31.png"></a>"""
+LICENSE = """
+  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <img alt="CC BY 4.0 "
+  style="border-width:0; margin-bottom:1px;"
+  src="https://licensebuttons.net/l/by/4.0/88x31.png" width="80" height="30"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
@@ -1363,7 +1367,7 @@ FILE_METADATA_UNSLUGIFY_TITLES = True
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
-    "JIDN-theme": "theme-base-blue",
+    "JIDN-theme": "hemingway",
 }
 
 # Add functions here and they will be called with template
