@@ -636,25 +636,25 @@ REDIRECTIONS = []
 # to `nikola deploy`.  If no arguments are specified, a preset
 # named `default` will be executed.  You can use as many presets
 # in a `nikola deploy` command as you like.
-# DEPLOY_COMMANDS = {
-#     'default': [
-#         "rsync -rav --delete output/ joe@my.site:/srv/www/site",
-#     ]
-# }
+##DEPLOY_COMMANDS = {
+##     'default': [
+##         "rsync -rav output/ 1914798@git.sd3.gpaas.net:/vhosts/##sweguide.trustedci.org/",
+##     ]
+## }
 
 # github_deploy configuration
 # For more details, read the manual:
 # https://getnikola.com/handbook.html#deploying-to-github
 # You will need to configure the deployment branch on GitHub.
-GITHUB_SOURCE_BRANCH = 'development'
-GITHUB_DEPLOY_BRANCH = 'master'
+##GITHUB_SOURCE_BRANCH = 'development'
+##GITHUB_DEPLOY_BRANCH = 'master'
 
 # The name of the remote where you wish to push to, using github_deploy.
-GITHUB_REMOTE_NAME = 'origin'
+##GITHUB_REMOTE_NAME = 'ssh 1914798@git.sd3.gpaas.net deploy  sweguide.trustedci.org.git master'
 
 # Whether or not github_deploy should commit to the source branch automatically
 # before deploying.
-GITHUB_COMMIT_SOURCE = True
+##GITHUB_COMMIT_SOURCE = True
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -941,14 +941,14 @@ FEED_LINKS_APPEND_QUERY = False
 # I recommend using the Creative Commons' wizard:
 # https://creativecommons.org/choose/
 LICENSE = """
-  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <center><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
   <img alt="CC BY 4.0 "
   style="border-width:0; margin-bottom:1px;"
-  src="https://licensebuttons.net/l/by/4.0/88x31.png" width="80" height="30"></a>"""
+  src="https://licensebuttons.net/l/by/4.0/88x31.png" width="90" height="30"></a> </center>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Trusted CI Suppliment Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
