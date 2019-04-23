@@ -11,7 +11,7 @@
 
 Be sure to review the requirements of levels 1 through 3 before continuing here. We will be building on what was talked about in those sections.
 
-Need content on policy next iteration. Will need to speak with Susan on that -KSW
+By this point, the security policy should consider how the software could affect other software. This could be anything from building an API to work with a data set to other software working with the output of your software. The policy should also consider such things as working at multiple locations at the same time and possibly sharing data with each other.
 
 By this point, static analysis should be added whenever possible to the testing process. This is a process that happens without actually compiling or running any code to find any possible bugs or vulnerabilities. Tools used for static analysis should be available to automatically review your code.
 
