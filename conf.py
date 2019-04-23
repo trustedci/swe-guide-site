@@ -134,7 +134,6 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("https://trustedci.org/guide", "Cybersecurity Planning Guide"),
         ("/level-1/", "Level 1: the minimally functional program"),
         ("/level-2/", "Level 2: Basic Software Engineering Practice"),
         ("/level-3/", "Level 3: Software Engineering for Software Supporting Science Projects"),
@@ -143,6 +142,7 @@ NAVIGATION_LINKS = {
         ("/level-6/", "Level 6: More tools and processes"),
 	("/level-7/", "Level 7: Tying it all together"),
 	("https://trustedci.org", "Trusted CI Home"),
+	("https://trustedci.org/guide", "Cybersecurity Planning Guide"),
     ),
    }
 
@@ -953,7 +953,7 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Trusted CI Suppliment Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
+CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
