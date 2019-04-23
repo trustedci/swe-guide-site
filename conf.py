@@ -639,7 +639,7 @@ REDIRECTIONS = []
 
 DEPLOY_COMMANDS = {
      'default': [
-	 "mkdir  ~/sweguide/SimpleHosting1/", 
+	 "mkdir -p ~/sweguide/SimpleHosting1/", 
          "sshfs 1914798@sftp.sd3.gpaas.net:/ ~/sweguide/SimpleHosting1/",
          "cp -r htdocs ~/sweguide/SimpleHosting/vhosts/sweguide.trustedci.org/",
      ]
