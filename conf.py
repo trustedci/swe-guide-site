@@ -134,6 +134,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        
         ("/level-1/", "Level 1: the minimally functional program"),
         ("/level-2/", "Level 2: Basic Software Engineering Practice"),
         ("/level-3/", "Level 3: Software Engineering for Software Supporting Science Projects"),
@@ -141,7 +142,7 @@ NAVIGATION_LINKS = {
         ("/level-5/", "Level 5: Software Engineering for Critical CI"),
         ("/level-6/", "Level 6: More tools and processes"),
 	("/level-7/", "Level 7: Tying it all together"),
-	("https://trustedci.org", "Trusted CI Home"),
+        ("https://trustedci.org", "Trusted CI Home"),
 	("https://trustedci.org/guide", "Cybersecurity Planning Guide"),
     ),
    }
@@ -318,7 +319,7 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-LOGO_URL = '/TrustedCI_logo_blue_web.svg'
+LOGO_URL = '~/TrustedCI_logo_blue_web.svg'
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
@@ -639,9 +640,21 @@ REDIRECTIONS = []
 
 DEPLOY_COMMANDS = {
      'default': [
-	 "mkdir  ~/sweguide/SimpleHosting1/", 
-         "sshfs 1914798@sftp.sd3.gpaas.net:/ ~/sweguide/SimpleHosting1/",
-         "cp -r htdocs ~/sweguide/SimpleHosting/vhosts/sweguide.trustedci.org/",
+	 # creates mount point
+         "mkdir -v ~/sweguide/SimpleHosting/", 
+         # mounts remote server
+         "sshfs 1914798@sftp.sd3.gpaas.net:/ ~/sweguide/SimpleHosting/",
+	 "sleep 5",  # Waits 5 seconds
+ 	 # uncomment 'rm' step if the folder isn't copying correctly,this will wipe dir, and then copy new files. 
+	 #"rm -rfv  ~/sweguide/SimpleHosting/vhosts/sweguide.trustedci.org/htdocs",  
+         #"sleep 5",  # Waits 5 seconds      
+	 # copies files 
+         "cp -rfv htdocs ~/sweguide/SimpleHosting/vhosts/sweguide.trustedci.org/",
+         "sleep 5",  # Waits 5 seconds
+	 # post cleanup.
+         "fusermount -zu  ~/sweguide/SimpleHosting/",
+         "rm -rfv ~/sweguide/SimpleHosting/ ,"
+	 
      ]
  }
 
@@ -664,7 +677,8 @@ DEPLOY_COMMANDS = {
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
 # to the location of conf.py
-OUTPUT_FOLDER = '~/htdocs'
+#OUTPUT_FOLDER = '~/htdocs'
+OUTPUT_FOLDER = 'htdocs'
 
 # where the "cache" of partial generated content should be located
 # default: 'cache'
@@ -953,6 +967,8 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
+#CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Trusted CI Suppliment Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
+
 CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
@@ -1372,7 +1388,7 @@ FILE_METADATA_UNSLUGIFY_TITLES = True
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
-    "JIDN-theme": "hemingway",
+    "JIDN-theme": "theme-base-blue",
 }
 
 # Add functions here and they will be called with template
