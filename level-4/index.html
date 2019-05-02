@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html prefix="        og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>LEVEL 4: SOFTWARE ENGINEERING FOR HIGH-RELIABILITY CI | TrustedCI Software Engineering Guide</title>
+<link href="/assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="/rss.xml">
+<link rel="canonical" href="https://sweguide.trustedCI.org/level-4/">
+<!--[if lt IE 9]><script src="/assets/js/html5shiv-printshiv.min.js"></script><![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <div id="container">
+        <div id="content">
+            <div id="header">
+                <h1 id="blog-title">
+                    <a href="https://sweguide.trustedCI.org/" title="TrustedCI Software Engineering Guide">TrustedCI Software Engineering Guide</a>
+                </h1>
+                
+                
+            </div>
+        <div class="hfeed">
+            <!--Body content-->
+            
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/level-4/" class="u-url">LEVEL 4: SOFTWARE ENGINEERING FOR HIGH-RELIABILITY CI</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Be sure to review the requirements of levels 1 through 3 before continuing here. We will be building on what was talked about in those sections.</p>
+<p>By this point, the security policy should consider how the software could affect other software. This could be anything from building an API to work with a data set to other software working with the output of your software. The policy should also consider such things as working at multiple locations at the same time and possibly sharing data with each other.</p>
+<p>By this point, static analysis should be added whenever possible to the testing process. This is a process that happens without actually compiling or running any code to find any possible bugs or vulnerabilities. Tools used for static analysis should be available to automatically review your code.</p>
+<p>Any solid team needs to have expectations of it's members in order to work well together and succeed at a goal. When the goal of a team is writing a piece of software, these expectations can play a big part in not only if the project succeeds or not, but even if the company continues to do well or if it has to shut it's doors. Each person working on the team should know what their roles are, the importance of each role, and how to communicate with others on what the status is. How the team works together on a day to day basis can be the difference on expectation management and winning the game. If two team members are always at each other throats, not only will they not work well together to meet expectations, but it puts a drain on the rest of the team's expectations. No one wants to upset another person if they worry that other person is going to get angry at them. This becomes an even larger issue if the project lead is easy to anger or does not communicate expectations well. While not everyone on the team should be friends outside of the office, there should be enough friendly communication during the working hours. A little humor here can go a long way. Each team member needs to have a set of expectations for what they are responsible for on an individual level and on a team-wide level. How should the team handle bug reports that contain a new vulnerability? Who can know about new features at what point? Who is responsible for public relations?</p>
+<p>Formal reviews of software are useful, especially early in the cycle of adding or removing a feature. Once the feature is planned and added or removed, a request should be sent out to the team. Each member working on the review should be given everything associated with the feature change. They should make notes on any issues they find, as well as making a note on things they feel is well put together. After all participating members have their notes together, a meeting should be held to discuss what issues they have and how to fix it. This is also a good time to complement another developer on work you find to be of high quality. This is a process that can weigh heavily on one's mind, so complements on the code can go a long way. This can also give more junior members a chance to learn what is and is not effective work. After the meeting, the original developer or developers of the feature change makes additional changes based on the outcome of the meeting. After applying these changes, follow up with the notes and other developers that were in the review process to verify all the changes were met.</p>
+<p>As the project grows, so does the attack surface of your code base. With that, hardening the security of the code base becomes increasingly important. The big area to think about is where can a user give bad data to do something the program is not designed to do. A few questions to think about include:</p>
+<ul>
+<li>
+<p>How sure of the data being passed into a function is valid?</p>
+</li>
+<li>
+<p>Is all user input scrubbed?</p>
+</li>
+<li>
+<p>How sure are you the data is valid you want to process?</p>
+</li>
+<li>
+<p>When adding data to the data set, can it damage other data around it?</p>
+</li>
+</ul>
+<p>Release cycle management is simply a process for deciding when new features are added and considered stable. Several folks, or even teams on large projects, should have input on the process. The code needs to be well tested with the rest of the code base, the documentation needs to be written for the new feature, and the code itself should be reviewed. In addition to any new features, any bug fixes between the current release and the next planned release should be included. If there are a lot of bug fixes since the last release, it may make sense to do a release with just bug fixes. This makes it easier for the end user to patch their code. Since time will be spent helping others apply patches, the time it takes to help apply those patches should be weighed against the time to do a release with just the patches included. If time is saved, it is worth sending out a release with those patches.</p>
+<p>Your work may be used for bigger projects downstream of what your project is doing. You may have a feature that people really like and want to use. This is a great thing and can become a great ally or a nightmare depending on how you understand how your work affects other projects downstream of you. Your entire project may even be used by others if allowed. Having a way for users to talk about how they are using your project is a solid starting point. The communication for the user base should include a way that you and the users have a way to see historical communication. This lets the users search for their question and see if it has been answered before. It also allows you to see what people struggle with the most, what others enjoy the most, and possibly what is not used. This can give you an eye into things that could be cleaned up either in the user interface, algorithms, or even the documentation. Understanding how the software is used downstream also will let you decide how functions return data. If an API returns so much data in a poor format, no one will want to use it because it is too difficult to parse what they want. However, if folks are stating they enjoy format XYZ, keep to that format in your API as much as possible.</p>
+</div>
+    </div>
+    
+
+</article><!--End of body content-->
+</div>
+<!-- .hfeed -->
+    </div>
+<!-- #content -->
+</div>
+<!-- #container -->
+
+<div id="primary" class="theme_sidebar">
+    <ul>
+<li>
+<h3><a href="/level-1/">Level 1: the minimally functional program</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="/level-2/">Level 2: Basic Software Engineering Practice</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="/level-3/">Level 3: Software Engineering for Software Supporting Science Projects</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="#">Level 4: Software Engineering for high-reliability CI</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="/level-5/">Level 5: Software Engineering for Critical CI</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="/level-6/">Level 6: More tools and processes</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="/level-7/">Level 7: Tying it all together</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="https://trustedci.org">Trusted CI Home</a></h3>
+            
+            
+            </li>
+<li>
+<h3><a href="https://trustedci.org/guide">Cybersecurity Planning Guide</a></h3>
+            
+            
+        </li>
+<li>
+  <center>
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <img alt="CC BY 4.0 " style="border-width:0; margin-bottom:1px;" src="https://licensebuttons.net/l/by/4.0/88x31.png" width="90" height="30"></a> </center>
+        </li>
+<li>
+    </li>
+</ul>
+</div>
+<!-- #primary .theme_sidebar -->
+
+<div id="footer">
+    <span id="theme-link"><a href="http://www.plaintxt.org/themes/blogtxt/" title="blog.txt theme for WordPress" rel="follow designer">blog.txt</a> 'theme by <span class="vcard"><a class="url fn n" href="http://scottwallick.com/" title="scottwallick.com" rel="follow designer"><span class="given-name">Scott</span><span class="additional-name"> Allan</span><span class="family-name"> Wallick</span></a></span></span>
+    <small><center>
+<br><span>Trusted CI Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents © 2019 <a href="mailto:swe@trustedci.org">TrustedCI</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br><center>
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <img alt="CC BY 4.0 " style="border-width:0; margin-bottom:1px;" src="https://licensebuttons.net/l/by/4.0/88x31.png" width="90" height="30"></a> </center> </center>
+            
+ </small><p>
+</p>
+</div>
+<!-- #footer -->
+
+</div>
+<!-- #wrapper -->
+    
+    
+    
+    
+            <script src="/assets/js/all-nocdn.js"></script>
+</body>
+</html>

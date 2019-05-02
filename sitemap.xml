@@ -6,35 +6,47 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://swe.trustedci.org/</loc>
-  <lastmod>2019-04-10T18:16:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/INDEX_PATH/</loc>
-  <lastmod>2019-04-10T18:16:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/INDEX_PATH/blog/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/archive.html</loc>
-  <lastmod>2019-04-10T18:24:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/archive.html</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/categories/</loc>
-  <lastmod>2019-04-04T17:42:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/categories/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/comingsoon.html</loc>
-  <lastmod>2019-04-10T18:16:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/level-1/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/level1/</loc>
-  <lastmod>2019-04-04T17:42:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/level-2/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/level2/</loc>
-  <lastmod>2019-04-04T17:42:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/level-3/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
  <url>
-  <loc>https://swe.trustedci.org/level3/</loc>
-  <lastmod>2019-04-04T17:42:00Z</lastmod>
+  <loc>https://sweguide.trustedCI.org/level-4/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sweguide.trustedCI.org/level-5/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sweguide.trustedCI.org/level-6/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://sweguide.trustedCI.org/level-7/</loc>
+  <lastmod>2019-04-26T18:04:00Z</lastmod>
  </url>
 </urlset>

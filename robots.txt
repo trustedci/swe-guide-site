@@ -1,4 +1,4 @@
-Sitemap: https://swe.trustedci.org/sitemapindex.xml
+Sitemap: https://sweguide.trustedCI.org/sitemapindex.xml
 
 User-Agent: *
-Host: swe.trustedci.org
+Host: sweguide.trustedCI.org
