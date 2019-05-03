@@ -69,27 +69,27 @@ Break down of the deploy script :
 The following is a breakdown of how the deploy script functions for troubleshooting purposes. 
 Each command has the verbose tag, an can be monitored as the site deploys.
 
-  # Creates an empty folder on the local machine to be used as a  mount point.
+ - Creates an empty folder on the local machine to be used as a  mount point.
          "mkdir -v ~/sweguide/SimpleHosting/", 
 
- # mounts the new folder to the remote server using SSHFS, this will fail if your key is not set up correctly. 
+ - mounts the new folder to the remote server using SSHFS, this will fail if your key is not set up correctly. 
          "sshfs 1914798@sftp.sd3.gpaas.net:/ ~/sweguide/SimpleHosting/",
         
-  # Waits 5 seconds, pauses were added to allow time for remote connections.
+  - Waits 5 seconds, pauses were added to allow time for remote connections.
          "sleep 5",  	
          
- # this step is currently commented out in the conf.py file. Uncomment 'rm' step if the folder isn't copying correctly, this will wipe the remote dir, and then copy new files. 
+- this step is currently commented out in the conf.py file. Uncomment 'rm' step if the folder isn't copying correctly, this will wipe the remote dir, and then copy new files. 
          #"rm -rfv  ~/sweguide/SimpleHosting/vhosts/sweguide.trustedci.org/htdocs",  
           # Waits 5 seconds   
           #"sleep 5",       
 
- # the following step copies files  to the remote server .
+- the following step copies files  to the remote server .
          "cp -rfv htdocs ~/sweguide/SimpleHosting/vhosts/sweguide.trustedci.org/",
    
-# Waits 5 seconds  to ensure transfers had time to complete      
+- Waits 5 seconds  to ensure transfers had time to complete      
 "sleep 5",  
 	
- # post cleanup unmounts the remote directory  and deletes the emply folder from your local machine. 
+- post cleanup unmounts the remote directory  and deletes the emply folder from your local machine. 
          "fusermount -zu  ~/sweguide/SimpleHosting/",
          "rm -rfv ~/sweguide/SimpleHosting/ ,"
 ____________________________________________________
