@@ -1,43 +1,43 @@
 # swe-guide-site
-##READ ME: How to Deploy the SWE Guide Website. 
+## READ ME: How to Deploy the SWE Guide Website. 
 
 This guide is written for deploying a Nikola Package using Linux.  Before you can deploy using the Conf.py Script you must have installed :
-*Python 3+	
-*Nikola 8.+ 	
-*SSHFS
-*Your SSH key added to the Gandi hosting keys list for the SWE.trustedci.org instance.
+* Python 3+	
+* Nikola 8.+ 	
+* SSHFS
+* Your SSH key added to the Gandi hosting keys list for the SWE.trustedci.org instance.
 
-###1: Python
+### 1: Python
 Make sure Python3.+ is installed on your machine.
 
-###2: Nikola 
+### 2: Nikola 
 Instructions on installing Nikola can be found at https://getnikola.com/getting-started.html .
 >*Do not use Snap in Ubuntu to install Nikola, the version of Nikola currently in Snap is outdated and cannot be effectively upgraded To version 8+ *<
 
 If you are running Ubuntu and are having trouble with the Nikola install as outlined on getnikola.com, a better tutorial for installing Nikola  in Ubuntu is located here:  
 https://flexion.org/posts/2015-11-installing-nikola-on-ubuntu/
 
->Note:  When running these commands, any that call python make sure you are replacing the version number in the script with the version number you are running. <
+> Note:  When running these commands, any that call python make sure you are replacing the version number in the script with the version number you are running. <
 
->Example, Where the script in the tutorial calls for python3.4, change it to the version of Python installed on your PC.  For example: change 3.4 to   3.7.  If 3.7 is your current version. 
+> Example, Where the script in the tutorial calls for python3.4, change it to the version of Python installed on your PC.  For example: change 3.4 to   3.7.  If 3.7 is your current version. 
 The install with fail if this is not done.<
 
-###3 SSHFS
+### 3 SSHFS
 Install SSHFS, this is required to run the deploy script. 
  
-###4 Authorization
+### 4 Authorization
 Authorization must be established to allow the deploy script to run.
  You will need to generate a public SSH Key and request it be added to the security keys for the gandi instance. The point of contacts to add these keys are : 
 conleym@iu.edu and amitts@iu.edu .
 
 ________________________________________________________________________
 
-##Respiratory and Branch Structure 
+## Respiratory and Branch Structure 
 
 The structure of the SWEguide Git Project and its branches. The current ready to deploy Nikola packages are located in the Master Branch. The Development Branch is the working directory. Files in the Development  Branch are in testing and are being actively updated.  
 ________________________________________________________________________
 
-##Steps to deploy the site.
+## Steps to deploy the site.
 
 Step 1:
 Create a local empty directory to place the Master branch.
@@ -66,7 +66,7 @@ Verify the upload by navigating to http://sweguide.trustedci.org/
 
 ___________________________________________________
 
-##Break down of the deploy script :
+## Break down of the deploy script :
 
 The following is a breakdown of how the deploy script functions for troubleshooting purposes. 
 Each command has the verbose tag, an can be monitored as the site deploys.
