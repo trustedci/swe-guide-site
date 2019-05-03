@@ -654,6 +654,7 @@ DEPLOY_COMMANDS = {
 	 # post cleanup.
          "fusermount -zu  ~/sweguide/SimpleHosting/",
          "rm -rfv ~/sweguide/SimpleHosting/ ,"
+	 
      ]
  }
 
@@ -914,6 +915,12 @@ IMAGE_FOLDERS = {'images': 'images'}
 # Check with list(pygments.styles.get_all_styles()) in an interpreter.
 # CODE_COLOR_SCHEME = 'default'
 
+
+
+
+
+
+
 # FAVICONS contains (name, file, size) tuples.
 # Used to create favicon link like this:
 #<link rel="icon" href="/file/TrustedCI_logo_blue_web.svg" sizes="16x16"/>
@@ -968,7 +975,7 @@ LICENSE = """
 # (translatable)
 #CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Trusted CI Suppliment Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
 
-CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>  <br> {license} </center>'
+CONTENT_FOOTER = '<center><br> <span>Trusted CI Grant #1547272, Robust Eager Grant #1823385</span>    <br> Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by  <a href="https://getnikola.com" rel="nofollow">Nikola</a> Theme by <span id="theme-link"><a href="http://www.plaintxt.org/themes/blogtxt/" title="blog.txt theme for WordPress" rel="follow designer">blog.txt</a> </span> <br> {license} </center>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will

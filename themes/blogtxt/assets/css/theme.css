@@ -1,4 +1,9 @@
 /* BLOG.TXT TWO-COLUMN (RIGHT) LAYOUT added center after margin auto*/
+
+
+
+@media screen {
+
 div#container{float: left;margin:0 0 0 -20em;width:100%; max-width: 1000px;}
 div#content{margin:0 0 0 5em; width:70%;max-width: 1000px}
 div#footer{clear:both;width:50%;}
@@ -15,13 +20,7 @@ div.hfeed{margin: auto;}
 div.theme_sidebar{border-left:0.1em solid #ccd0d6;overflow:hidden;padding-left:2.4em;width:17.5em;}
 
 /*
-THEME NAME: blog.txt
-THEME URI: http://www.plaintxt.org/themes/blogtxt/
-DESCRIPTION: Where a blog and its text join together. An exceptionally clean theme&mdash;a classic. For WordPress 2.6.x.
-VERSION: 4.6.1
-AUTHOR: Scott Allan Wallick
-AUTHOR URI: http://scottwallick.com/
-TAGS: variable width, fixed width, variable columns, two columns, three columns, widgets, theme options, options page, white, gray, typography, microformats, hatom, hcard
+
 */
 body h1,body h2,body h3{font-family:garamond,georgia,times,serif;font-weight:400; margin-bottom: 12px;}
 a,a:link{outline:none;text-decoration:none;}
@@ -29,11 +28,15 @@ div#header a,div#header a:link{color:#0d1117;}
 div.hfeed a,div.hfeed a:link,div.entry-content ul.xoxo li.hentry span a,div.entry-content ul.xoxo li.hentry span a:link{border-bottom:1px solid #9aa1ae;color:#34425b;}
 div.hfeed .entry-title a,div.hfeed .entry-title a:link,div.hfeed div.entry-meta a,div.hfeed div.entry-meta a:link{border-bottom:none;}
 div.theme_sidebar a,div.theme_sidebar a:link{background:#fff;border-bottom:1px solid #ccd0d6;color:#34425b;}
+
+
+
+
+
 div#footer a,div#footer a:link{border-bottom: 1px solid #ccd0d6;color: #9aa1ae;}
 div.hfeed a:visited,div.entry-content ul.xoxo li.hentry span a:visited{color:#677284;}
 div.hfeed .entry-title a:visited{color:#34425b;}
 div#header a:hover{color:#9aa1ae;}
-div#footer a:hover{border-bottom: 1px solid #34425b;color: #34425b;}
 div.hfeed a:hover,div.hfeed .entry-title a:hover,div.hfeed div.entry-meta a:hover,div.theme_sidebar a:hover,div.entry-content ul.xoxo li.hentry span a:hover{border-bottom:1px solid #0d1117;color:#0d1117;}
 div.hfeed a:active,div.theme_sidebar a:active{color:#677284;border-bottom:1px solid #b4b9c3;}
 body{background:#fff;color:#222;line-height:140%;margin:0 0 2em;padding:0;}
@@ -43,7 +46,7 @@ body input#s{background:#f6f6f7;border:1px solid #9ca1a8;font-size:1em;line-heig
 body.author div.hfeed div.archive-meta p{color:#555;font-size:0.9em;margin:0;}
 body.single div.navigation{margin:4em 0 0;}
 div#footer{color:#9aa1ae;font-size:0.9em;padding:6em 0 0;}
-div#globalnav,div.access,div#footer span#theme-link span.additional-name,div#footer span#theme-link span.family-name{display:none;}
+div#globalnav,div.access,div#footer span#theme-link span.additional-name,div#footer span#theme-link span.family-name
 div#header a{text-decoration:none;}
 div#header div#blog-description,div#header div.archive-description{font-size:1.1em;line-height:133%;}
 /*font size for Title, color of base line, changed margin from 0 to auto.*/
@@ -141,7 +144,7 @@ div.theme_sidebar{line-height:150%; margin-right:15px;}
 /*change vertical spacing here*/
 div.theme_sidebar ul li{list-style:none;margin:0 0 2em;padding:0;}
 /* Font Size for sideBar is changed here, 'font-size: #em;' */
-div.theme_sidebar ul li h3{font-weight:bold;font-size:.8em;line-height:100%;letter-spacing:1px;margin:0 0 0.9em;text-transform:uppercase;}
+div.theme_sidebar ul li h3{font-weight:bold;font-size:1em;line-height:100%;letter-spacing:1px;margin:0 0 0.9em;text-transform:uppercase;}
 div.theme_sidebar ul li ul li{color:#4d5663;margin:0;padding:0;}
 div.theme_sidebar ul li ul li ul{margin:0 0 0.2em;}
 div.theme_sidebar ul li ul li ul li{color:#9aa1ae;list-style:disc;margin:0 0 0 2em;}
@@ -170,3 +173,21 @@ body input#s,div.entry-content div.page-link,div.entry-content p.attachment-name
 div.hfeed div.hentry{text-align:left;}
 body div#wrapper{margin:5em 0 0 25em;}
 div.entry-content{margin-top: 15px;}
+
+}
+
+@media print {
+body h1,body h2,body h3{font-family:garamond,georgia,times,serif;font-weight:400; margin-bottom: 12px;text-align:center;}
+body{font-size:80%;}
+h1 { font-size: 16pt; }
+h2 { font-size: 12pt; margin-top: 25px }
+header nav, footer,div.theme_sidebar {display: none;}
+@page { margin: 2cm; }
+}
+
+
+
+
+
+
+
