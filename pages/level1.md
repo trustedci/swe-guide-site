@@ -9,6 +9,7 @@
 .. type: text
 -->
 
+
 This is the most basic level of secure software engineering practice, appropriate for the small project not intended as a stand-alone software product, but as an incidental, one-off development in the course of a particular scientific investigation.  Such a piece of software is:
 
 * Single use: neither meant to be distributed to others for their use, or kept and used for multiple projects
@@ -69,7 +70,7 @@ Git has an [excellent tutorial](https://git-scm.com/docs/gittutorial). The tutor
 
 Another key to ensuring reproducibility is to clearly document how to build your code so that you aren’t relying on memory or unspoken assumptions to get the job done. Anyone, yourself included, should be able to build and run your code with the correct results by reading the documentation and using the tools provided. This includes documenting what tools and development libraries that are used and their versions, providing default configuration where appropriate, and ensuring that when the software builds it is labeled in some way with the correct version number (if applicable).
 
-For very small/simple projects, a README.TXT or README.MD file in the project’s root directory may be sufficient documentation if well-written.  For bigger, more complex projects, consider using automated documentation tools such as Github Pages or Read the Docs to make more extensive documentation easier to maintain.
+For very small/simple projects, a `README.TXT` or `README.MD` file in the project’s root directory may be sufficient documentation if well-written.  For bigger, more complex projects, consider using automated documentation tools such as Github Pages or Read the Docs to make more extensive documentation easier to maintain.
 
 Shipping a build tool that automates this process can greatly reduce not only what you have to document, but the work that you must do along the way while building, testing, and using the software.  You’ll find more on that later in this chapter under “Build Infrastructure”.
 
@@ -127,8 +128,6 @@ python3 $script $file
 # exit the shell script
 exit
 ~~~
-
-### Changelog
 
 ### Development Status
 
