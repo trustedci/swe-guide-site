@@ -9,35 +9,36 @@
 .. type: text
 -->
 
-The next level of secure software engineering starts with individual pieces of software that could be used by others, but is still geared towards a very focused task. As we are building on earlier topics, be sure you have read and understood the topics covered in the minimally functional program capter. In this chapter, we will cover:
+This next level of secure software engineering starts with individual pieces of software that will be developed by a team and/or distributed for use by more than the developer(s).  This software:
 
-* Use of revision control
+- May have any number of developers, including developers who aren't local to one another
+- May be distributed to people outside the development team for their use
+- Does not include any network-connected services
 
-* Semantic Versioning
+Teams developing at Level 2 should be doing all of the Level 1 requirements, including: using *revision control*, *documenting dependencies and build process*, creating and maintaining *build Infrastructure*, communicating the software's *development status*, and adding a *license* to the software.
 
-* Change Log
+In this chapter, we cover additional Level 2 requirements:
 
-* Distributing software
-
-* Code signing
-
-* Basic security policy, including vulnerability management
-
-* Dependency selection
-
-* Succession
-
-* Issue tracker
-
-* Testing
+1. Use of revision control
+2. Semantic Versioning
+3. Change Log
+4. Distributing software
+5. Code signing
+6. Basic security policy, including vulnerability management
+7. Dependency selection
+8. Succession
+9. Issue tracker
+10. Testing
 
 ### Use of revision control
 
-Version control allows for tracking changes of the code based on who or what is being changed. It allows for reproducability by:
+Revision control allows for tracking changes to the code over time. It supports reproducibility by:
+* Logging what changes were made to the code, when, and by whom
+* Allowing easy comparisons between versions of the code
+* Making it possible to revert to any specific version of the code that existed previously
+* When using a modern revision control system, such as git or Mercurial, constantly checking for integrity issues that may be introduced accidentally due to disk errors or network transfer issues
 
-* Logging the changes made to the code and by who.
-
-* Reverting to specific versions of your code are possible to deal with a variety of changes from multiple sources.
+When working with a team, or expecting outsiders to be able to navigate your repository, some additional care is required in maintaining and communicating about that repository compared to what we did in Level 1.
 
 #### Branches
 

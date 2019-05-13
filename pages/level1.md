@@ -30,11 +30,9 @@ To this end, secure software engineering practice at the first level of our  mat
 
 3. Build Infrastructure
 
-4. Changelog
+4. Development Status
 
-5. Development Status
-
-6. License
+5. License
 
 The rest of this chapter will lay out each of these requirements with how-tos and references on how to implement them for your own software projects.
 
