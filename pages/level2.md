@@ -76,6 +76,19 @@ When it comes for the life of the software, having other core developers who can
 
 ### Issue tracker
 
+Issue tracking allows for maintaining a record of any bugs that come up in your software. No one writes perfect code all the time and things happen. A good issue tracker will allow you to:
+
+* Track who is working on the bug.
+
+* What file(s) and line(s) the bug is found.
+
+* Make the report publically viewable or viewable to only a few people.
+
+* Track the status of the changes.
+
+* Write up a short report on how the bug was fixed and how to get the patch.
+
+This provides not only good communication to the people using the software at the time, but offers a way to show a clear path that can be reproduced by others.
 
 ### Testing
 
