@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-This next level of secure software engineering starts with individual pieces of software that will be developed by a team and/or distributed for use by more than the developer(s).  This software:
+This level of secure software engineering is intended for with software that will be developed by a team and/or distributed for use by more than the developer(s).  This software:
 
 - May have any number of developers, including developers who aren't local to one another
 - May be distributed to people outside the development team for their use
@@ -19,7 +19,7 @@ Teams developing at Level 2 should be doing all of the Level 1 requirements, inc
 
 In this chapter, we cover additional Level 2 requirements:
 
-1. Use of revision control
+1. Revision Control Workflow
 2. Semantic Versioning
 3. Change Log
 4. Distributing software
@@ -30,15 +30,9 @@ In this chapter, we cover additional Level 2 requirements:
 9. Issue tracker
 10. Testing
 
-### Use of revision control
+### Revision Control Best Practices
 
-Revision control allows for tracking changes to the code over time. It supports reproducibility by:
-* Logging what changes were made to the code, when, and by whom
-* Allowing easy comparisons between versions of the code
-* Making it possible to revert to any specific version of the code that existed previously
-* When using a modern revision control system, such as git or Mercurial, constantly checking for integrity issues that may be introduced accidentally due to disk errors or network transfer issues
-
-When working with a team, or expecting outsiders to be able to navigate your repository, some additional care is required in maintaining and communicating about that repository compared to what we did in Level 1.
+At level 1, you already learned that it is necessary to use revision control.  However, for small projects that must be understood by at most one or two people, and available as historical artifacts, *how* the revision control system is used may not be that important.  When working with a team, or expecting outsiders to be able to navigate your repository, some additional care is required in maintaining the repository and communicating about its contents.
 
 #### Branches
 
@@ -48,11 +42,13 @@ The different tracks of changes are called branches and will have at least a mas
 
 * Testing -- Any code that needs testing should be here. It often intertwines a lot with the Development branch as code is modified.
 
-* Individual contributer branches -- This is a good place for developers to apply patches to test without bothering the development and testing branches.
+* Individual contributor branches -- This is a good place for developers to apply patches to test without bothering the development and testing branches.
 
 ### Semantic Versioning
 
 Versioning of software comes in handy to both the users and the entire team working on the project. It allows for tracking what changes happened when. The common values for the version number is the major version, minor version, patch number. It is usually noted in that order with the period (.) separating the values. The patch value is usually only used for internal tracking for the developers, but the major and minor versions are attached to the release of changes. The rate that the major and minor versions change tends to be decided upon by the project manager. However, the general rule is that minor versions are sets of small patches and a major version is when there is a major change to the code base, either with many minor changes or a big bug fix.
+
+### Change Log
 
 ### Distributing software
 
