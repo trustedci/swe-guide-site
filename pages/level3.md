@@ -76,13 +76,13 @@ Other design areas to decide before starting on code include:
 
 * What communication tools will the developers or users use? Some examples include:
 	
-	* Mailing lists
+	* Mailing lists, such as [Google Groups] (https://groups.google.com/) or [mailman] (https://www.list.org/)
 
-	* Internet Relay Chat (IRC)
+	* Internet Relay Chat (IRC), such as [Freenode] (https://freenode.net/)
 
-	* Discord
+	* [Discord] (https://discordapp.com/)
 
-	* Slack
+	* [Slack] (https://slack.com/)
 
 
 ### Automated and manual testing requirements
