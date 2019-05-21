@@ -2,10 +2,10 @@
 .. title: LEVEL 5: SOFTWARE ENGINEERING FOR CRITICAL CI
 .. slug: level-5
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: 
+.. tags: TrustedCI Software Engeneering Guide 
 .. category: 
 .. link: 
-.. description: 
+.. description:TrustedCI Software Engeneering Guide Level 5. Policy should be looking at large organizations who use many pieces of software to work towards it's goal. 
 .. type: text
 -->
 

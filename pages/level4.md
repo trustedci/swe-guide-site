@@ -3,9 +3,9 @@
 .. slug: level-4
 .. date: 2019-04-12 15:21:19 UTC-04:00
 .. tags: 
-.. category: 
+.. category: TrustedCI Software Engeneering Guide security policy
 .. link: 
-.. description: 
+.. description:TrustedCI Software Engeneering Guide Level 4 Security policy.  Security policy should consider how the software could affect other software.
 .. type: text
 -->
 
