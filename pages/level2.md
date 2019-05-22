@@ -2,10 +2,10 @@
 .. title: Level 2: BASIC SOFTWARE ENGINEERING PRACTICE
 .. slug: level-2
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: 
+.. tags: TrustedCI Software Engeneering Guide Revision Control Workflow
 .. category: 
 .. link: 
-.. description: 
+.. description: TrustedCI Software Engeneering Guide Level 2 Revision Control Workflow, this chapter covers  Semantic Versioning , Change Log , Distributing software, Code signing, Basic security policy,  vulnerability management, Dependency selection, Succession Issue tracker, and Testing 
 .. type: text
 -->
 

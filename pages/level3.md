@@ -2,10 +2,10 @@
 .. title: LEVEL 3: SOFTWARE ENGINEERING FOR SOFTWARE SUPPORTING SCIENCE PROJECTS
 .. slug: level-3
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: 
+.. tags: TrustedCI Software Engeneering Guide Revision Control and least privilege security exercises
 .. category: 
 .. link: 
-.. description: 
+.. description:TrustedCI Software Engeneering Guide Level 3  This chapter focuses on Revision Control,  least privilege, and  Next iteration on policy. Including: coding standards, Automated and manual testing requirements, and security exercises
 .. type: text
 -->
 
@@ -84,27 +84,27 @@ Other design areas to decide before starting on code include:
 
 	* [Slack] (https://slack.com/)
 
-
 ### Automated and manual testing requirements
 
 As discussed in previous chapters, testing is cruicial to any project that needs repoduciability. There are two ways to run the tests: manually or automated.
 
-#### Automated testing
 
-Automated testing usually happens when you commit code to the project. It will run all the tests in the project to make sure any changes you've made won't break the project as a whole. The results can be then sent back through multiple mediums such as:
+#### Automated testing	
 
-* Emailed results
+ Automated testing usually happens when you commit code to the project. It will run all the tests in the project to make sure any changes you've made won't break the project as a whole. The results can be then sent back through multiple mediums such as:	
 
-* Web interface showing the failed/passed test results
+ * Emailed results	
 
-* A call to the developer chat channels using AI.
+ * Web interface showing the failed/passed test results	
 
-Automated testing also comes into play with automated builds, which will be covered later in this chapter.
+ * A call to the developer chat channels using AI.	
 
-#### Manual testing
+ Automated testing also comes into play with automated builds, which will be covered later in this chapter.	
 
-Manual testing is when you run test cases independent of commiting code and is usually focused on your local changes instead of the project as a whole. This often can give you hints on if changes will break the project as a whole or not. For example, if an algorithum gets changed in a function and returns a different result than what your tests expected, it will fail when it gets committed.
+ #### Manual testing	
 
+ Manual testing is when you run test cases independent of commiting code and is usually focused on your local changes instead of the project as a whole. This often can give you hints on if changes will break the project as a whole or not. For example, if an algorithum gets changed in a function and returns a different result than what your tests expected, it will fail when it gets committed.
+ 
 ### Automated builds
 
 In earlier chapters, we talked about simple tools for automating the build process. The simple scripts and tools are great for quick builds. However, a bigger build system is in need for compiling the source code. Some common build systems in use today include cmake and waf. Both tools, when done correctly, will be able to find the appropriate files in the correct order to compile the code, show you what step it is on, and any warnings and errors it finds. The steps can fly by, so if the project is large redirecting the output from the build tool you use to a file makes seeing the process it does much easier.
@@ -113,25 +113,25 @@ In earlier chapters, we talked about simple tools for automating the build proce
 
 Development documentation is important for aiding other developers on the workings of your code. Unlike user documentation such as a Quick Install Guide and a README, development documentation dives deeper into the project. These documents should include topics that cover:
 
-* Fixing issues
+* Fixing issues	
 
-* File naming and location conventions
+ * File naming and location conventions	
 
-* Where to send a bug report
+ * Where to send a bug report	
 
-* What assumptions were made.
+ * What assumptions were made.	
 
-This will allow other developers inside and outside the project a chance to better understand your project and what to expect in communication with you.
+ This will allow other developers inside and outside the project a chance to better understand your project and what to expect in communication with you.
 
 ### Issue tracker management
 
 Expanding on issue tracking from previous sections, the more control over issue tracking you have, the better. Aside from being able to mark an issue as publicly or privately available, there are a few other tools that should be useful such as: 
 
-* Assigning an issue to an individual developer or a small group of developers.
+* Assigning an issue to an individual developer or a small group of developers.	
 
-* Discussions about an issue.
+ * Discussions about an issue.	
 
-* Code tracking for an issue.
+ * Code tracking for an issue.
 
 ### Up and down stream communications
 

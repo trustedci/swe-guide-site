@@ -2,10 +2,10 @@
 .. title: LEVEL 6: MORE TOOLS AND PROCESSES
 .. slug: level-6
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: 
+.. tags: TrustedCI Software Engeneering Guide Triaging code metrics major refactor
 .. category: 
 .. link: 
-.. description: 
+.. description:TrustedCI Software Engeneering Guide Level 6. This Chaper covers  Triaging code, Code metrics, and  major refactor
 .. type: text
 -->
 
