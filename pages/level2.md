@@ -9,6 +9,7 @@
 .. type: text
 -->
 
+
 This level of secure software engineering is intended for with software that will be developed by a team and/or distributed for use by more than the developer(s).  This software:
 
 - May have any number of developers, including developers who aren't local to one another
@@ -30,7 +31,7 @@ In this chapter, we cover additional Level 2 requirements:
 9. Issue tracker
 10. Testing
 
-### Revision Control Best Practices
+### Revision Control Best Practices [TODO]
 
 At level 1, you already learned that it is necessary to use revision control.  However, for small projects that must be understood by at most one or two people, and available as historical artifacts, *how* the revision control system is used may not be that important.  When working with a team, or expecting outsiders to be able to navigate your repository, some additional care is required in maintaining the repository and communicating about its contents.
 
@@ -46,9 +47,12 @@ The different tracks of changes are called branches and will have at least a mas
 
 ### Semantic Versioning
 
-Versioning of software comes in handy to both the users and the entire team working on the project. It allows for tracking what changes happened when. The common values for the version number is the major version, minor version, patch number. It is usually noted in that order with the period (.) separating the values. The patch value is usually only used for internal tracking for the developers, but the major and minor versions are attached to the release of changes. The rate that the major and minor versions change tends to be decided upon by the project manager. However, the general rule is that minor versions are sets of small patches and a major version is when there is a major change to the code base, either with many minor changes or a big bug fix.
+[Semantic versioning](https://semver.org) may sound nitpicky, but it's an invaluable tool for ensuring that your software will be installed and maintained correctly wherever it's going.  No matter how good your other methods of communication are, your version number is the primary way of telling consumers of your software what a particular update means.
+
+Semantic versioning, as explained at the link above, is a specific, widely-adopted way of determining the version number for a piece of software.  Because most people who administer your software will be responsible for hundreds or thousands of software packages, they won't be able to read every mailing list message or issue queue note to find out whether your update will break anything, or contains an important security patch.  Making your version numbers predictable and understandable solves the problem nicely, and can greatly reduce frustration among consumers of your software, without any real cost to you.
 
 ### Change Log
+
 
 ### Distributing software
 
