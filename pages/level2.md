@@ -9,7 +9,6 @@
 .. type: text
 -->
 
-
 This level of secure software engineering is intended for with software that will be developed by a team and/or distributed for use by more than the developer(s).  This software:
 
 - May have any number of developers, including developers who aren't local to one another
@@ -51,8 +50,12 @@ The different tracks of changes are called branches and will have at least a mas
 
 Semantic versioning, as explained at the link above, is a specific, widely-adopted way of determining the version number for a piece of software.  Because most people who administer your software will be responsible for hundreds or thousands of software packages, they won't be able to read every mailing list message or issue queue note to find out whether your update will break anything, or contains an important security patch.  Making your version numbers predictable and understandable solves the problem nicely, and can greatly reduce frustration among consumers of your software, without any real cost to you.
 
+### Version X.y.z
+
+
 ### Change Log
 
+https://keepachangelog.com
 
 ### Distributing software
 
