@@ -65,7 +65,15 @@ As the project grows, so does the attack surface of your code base. With that, h
 
 ### Release cycle management
 
-Release cycle management is simply a process for deciding when new features are added and considered stable. Several folks, or even teams on large projects, should have input on the process. The code needs to be well tested with the rest of the code base, the documentation needs to be written for the new feature, and the code itself should be reviewed. In addition to any new features, any bug fixes between the current release and the next planned release should be included. If there are a lot of bug fixes since the last release, it may make sense to do a release with just bug fixes. This makes it easier for the end user to patch their code. Since time will be spent helping others apply patches, the time it takes to help apply those patches should be weighed against the time to do a release with just the patches included. If time is saved, it is worth sending out a release with those patches.
+Release cycle management is simply a process for deciding when new features are added and considered stable. Several folks, or even teams on large projects, should have input on the process. The code needs to be:
+
+* Well tested with the rest of the code base
+
+* Documentation needs to be written for the new feature
+
+* The code itself should be reviewed.
+
+In addition to any new features, any bug fixes between the current release and the next planned release should be included. If there are a lot of bug fixes since the last release, it may make sense to do a release with just bug fixes. This makes it easier for the end user to patch their code. Since time will be spent helping others apply patches, the time it takes to help apply those patches should be weighed against the time to do a release with just the patches included. If time is saved, it is worth sending out a release with those patches.
 
 ### Understanding downstream to ultimate deployments
 
