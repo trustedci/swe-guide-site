@@ -1,6 +1,6 @@
 <!--
 .. title: MORE TOOLS AND PROCESSES
-.. slug: TOOLS
+.. slug: tools
 .. date: 2019-04-12 15:21:19 UTC-04:00
 .. tags: TrustedCI Software Engeneering Guide Triaging code metrics major refactor
 .. category: 
