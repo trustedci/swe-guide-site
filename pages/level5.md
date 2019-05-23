@@ -31,7 +31,16 @@ There should also be a set of goals that the organization works towards. For exa
 
 ### Adding external reviews
 
-Having an external reviewer taking a look at your code base can find some issues you and your team may have glossed over. As one becomes more and more involved with a project, it becomes difficult to find issues that an outsider might spot right away. This is due to the fact that one just gets so use to seeing the same project, they make some assumptions about the project in their head, regardless of it being intended or not. The external reviewer should come into the project with a fresh set of eyes and give feedback on what issues they find.
+External reviews, or audits, examins everything related to a project to make sure it is held to the standards given for the project. This can cover items such as:
+
+* Process of software development.
+
+* Contractual agreements are being met.
+
+* How sensitive data (such as [HIPAA](https://www.hhs.gov/hipaa/index.html)) is handled.
+
+Since the review process is done by a party outside of the organization, it can be used to help build trust within the community. The reviewing organization should be one that is well trusted in the community.
+
 
 ### Architectural review as a cyclical process
 
