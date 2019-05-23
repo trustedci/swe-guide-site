@@ -135,13 +135,15 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         
-        ("/level-1/", "Level 1: the minimally functional program"),
+        
+	("/introduction.html", "Introduction"),
+	("/level-1/", "Level 1: The minimally functional program"),
         ("/level-2/", "Level 2: Basic Software Engineering Practice"),
         ("/level-3/", "Level 3: Software Engineering for Software Supporting Science Projects"),
 	("/level-4/", "Level 4: Software Engineering for high-reliability CI"),
         ("/level-5/", "Level 5: Software Engineering for Critical CI"),
-        ("/level-6/", "Level 6: More tools and processes"),
-	("/level-7/", "Level 7: Tying it all together"),
+        ("/tools/", "More tools and processes"),
+	("/tying-it-togeather/", "Tying it all together"),
         ("https://trustedci.org", "Trusted CI Home"),
 	("https://trustedci.org/guide", "Cybersecurity Planning Guide"),
     ),
