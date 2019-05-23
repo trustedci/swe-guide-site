@@ -5,7 +5,7 @@
 .. category: 
 .. link: /index.html
 .. pretty_url: False
-.. description: 
+.. description: TrustedCI Software Engeneering Guide this guide is geared towards the scientific community who has to write or maintain software. 
 .. type: text
 -->
 

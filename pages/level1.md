@@ -2,10 +2,10 @@
 .. title:LEVEL 1: THE MINIMALLY FUNCTIONAL PROGRAM
 .. slug: level-1
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: 
+.. tags: TrustedCI Software Engeneering Guide secure software engineering practice
 .. category: 
 .. link: 
-.. description: 
+.. description: TrustedCI Software Engeneering Guide Level 1 basic level of secure software engineering practice, appropriate for the small project not intended as a stand-alone software product
 .. type: text
 -->
 
