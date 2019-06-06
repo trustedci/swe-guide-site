@@ -36,17 +36,17 @@ To this end, secure software engineering practice at the first level of our  mat
 
 The rest of this chapter will lay out each of these requirements with how-tos and references on how to implement them for your own software projects.
 
-### Revision Control
+## Revision Control
 
 The rest of this chapter will lay out each of these requirements with how-tos and references on how to implement them for your own software projects.
 
-#### Which revision control software should I use?
+### Which revision control software should I use?
 
 If you don’t know which revision control system is appropriate for your project, use [git](https://git-scm.com/).  Git is great at revision control for most types of projects, and at least decent for all the rest.  It is well-supported on all operating systems, it is free, and it is supported by countless hosted services such as [Github](https://github.com/), [Gitlab](https://about.gitlab.com/), or [Bitbucket](https://bitbucket.org/) (to avoid the overhead of running your own server), and easy to host with stand-alone [gitolite](https://gitolite.com/gitolite/index.html) or [Gitlab](https://about.gitlab.com/) if you must self-host due to the sensitivity of your research.
 
 There are cases where Mercurial (hg) is an appropriate alternative to git.  However, do not start using CVS or Subversion today, especially for scientific software.  These older revision control systems completely lack modern integrity checking mechanisms.  So, if your science project’s primitives are archived somewhere for a few years and some corruption happens on the disk or tape, no one will ever know.  A modern system such as git or Mercurial guarantees that such accidental corruption would be noticed, and would not reflect poorly on the reproducibility of your research.
 
-#### What else should I know about revision control?
+### What else should I know about revision control?
 
 Every revision control system provides unique identifiers for versions of your software.  Each time you tell the system about a change, we call this a commit.  In git, for example, the last few characters of a commit ID are normally used as the identifier.  If you look at the git log of a software project, it may summarize recent changes like this:
 
@@ -60,11 +60,11 @@ Then, if this must ever be reproduced, you can go right back to that tag and get
 
 An added benefit of revision control is that it encourages you to keep track of what you do when you change the software.  This can be of great help when you write your changelog (discussed later in this chapter).  Each time you make a commit, you’ll be prompted to provide a commit message briefly explaining what has changed in the software.  Taking the time to do this provides an invaluable record of the software’s evolution.
 
-#### How can I learn more?
+### How can I learn more?
 
 Git has an [excellent tutorial](https://git-scm.com/docs/gittutorial). The tutorial walks you through all the features of git and some details on each command, common situations you might find yourself in, and where to find more documentation.
 
-### Document Dependencies and Build Process
+## Document Dependencies and Build Process
 
 Another key to ensuring reproducibility is to clearly document how to build your code so that you aren’t relying on memory or unspoken assumptions to get the job done. Anyone, yourself included, should be able to build and run your code with the correct results by reading the documentation and using the tools provided. This includes documenting what tools and development libraries that are used and their versions, providing default configuration where appropriate, and ensuring that when the software builds it is labeled in some way with the correct version number (if applicable).
 
@@ -72,7 +72,7 @@ For very small/simple projects, a `README.TXT` or `README.MD` file in the projec
 
 Shipping a build tool that automates this process can greatly reduce not only what you have to document, but the work that you must do along the way while building, testing, and using the software.  You’ll find more on that later in this chapter under “Build Infrastructure”.
 
-#### Documentation must-haves
+### Documentation must-haves
 
 * Where do I go to find the most current version of this software and its repository?
 
@@ -94,19 +94,19 @@ Shipping a build tool that automates this process can greatly reduce not only wh
 
 	* More on this under “Development Status”, later in this chapter.
 
-#### Tips for readable default configuration files
+### Tips for readable default configuration files
 
 If your software requires a configuration file in order to build or run, provide a default configuration to get others started, or as a reference in case someone must reproduce your work later.  If you normally provide many parameters to your program on the command line, consider moving that out to a configuration file instead.  Doing so makes it easier for you or others to understand in the future exactly how the program was run at a particular time, improving reproducibility.
 
 Default config files should have a short description of each variable and a default value assigned to the variable. Commenting each variable in a config file to indicate what it does will also aid with reproducibility.  Remember, this only takes a moment and what seems obvious now will not be when someone tries to reproduce your research in 10 or more years.
 
-### Build Infrastructure
+## Build Infrastructure
 
 “Build infrastructure” can refer to anything from a very simple [bash script](https://www.gnu.org/software/bash/) that builds your program to a more elaborate build system like [cmake](https://cmake.org/), [scons](https://scons.org/), or [waf](https://waf.io/).  The important thing is to automate as much of the build process as possible to reduce human error and ensure that your program builds the same way each time.  This makes debugging easier and more effective, and also helps to ensure that each time your program is used it was built as expected (reproducibility, reproducibility, reproducibility).
 
 A good build infrastructure will output each step it does as it does them, as well as any errors or warnings it finds. Directing a copy of this to a file to review when the build fails will make finding the issue easier. Some build systems, such as [make](https://www.gnu.org/software/make/), will drop you into the file at the line it found the first error when you call it from the editor.
 
-#### A Simple Build Script Example
+### A Simple Build Script Example
 
 ~~~
 #!/usr/bin/env bash
@@ -127,7 +127,7 @@ python3 $script $file
 exit
 ~~~
 
-### Development Status
+## Development Status
 
 Indicating the development status of your project is important to helping others understand what it is and what it is for.  This needn’t be complicated.  Just add a statement to your README and/or project web page indicating:
 
@@ -139,7 +139,7 @@ Indicating the development status of your project is important to helping others
 
 The purpose of stating development status is to (hopefully) prevent potential users of the software from making false assumptions about what the software should be used for, or how secure they can expect it to be.
 
-### License
+## License
 
 Not all researchers realize this, but if you release code on a public code-hosting site without stating its license, you still haven’t effectively shared it with anyone.  In the US and many other countries, all software defaults to “All Rights Reserved” unless explicitly licensed by its author(s).  Including a license statement with your software ensures that others can examine, use, or modify it, including to reproduce your research or to learn from or build upon your work.
 
