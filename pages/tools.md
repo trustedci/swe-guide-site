@@ -41,7 +41,7 @@ Any major refactor can be daunting at first. Thankfully, there are some tricks t
 
 * Cluster interruptions. For example:
 
-	* Only check email at certain times (see [Boomerang for Gmail](https://www.boomeranggmail.com/) if you use gmail and need to access your email, but don't want to see incoming emails).
+	* Only check email at certain times (see [Boomerang for Gmail](https://www.boomeranggmail.com/) if you use gmail or [Boomerang for Outlook](https://www.boomerangoutlook.com/) if you use Outlook. This allows you to access your email, but not see new emails until a set time).
 
 	* Schedule meetings as close together.
 
