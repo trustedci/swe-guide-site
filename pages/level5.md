@@ -17,7 +17,7 @@ Be sure to review the requirements of levels 1 through 4 before continuing here.
 
 * Architectural review as a cyclical process
 
-### Next iteration on policy
+## Next iteration on policy
 
 At this point, the policy should be looking at large organizations who use many pieces of software to work towards it's goal. It should include things such as:
 
@@ -29,7 +29,7 @@ At this point, the policy should be looking at large organizations who use many 
 
 There should also be a set of goals that the organization works towards. For example, the [Open Science Grid (OSG)] (https://opensciencegrid.org/) "provides common service and support for resource providers and scientific institutions using a distributed fabric of high throughput computational services."
 
-### Adding external reviews
+## Adding external reviews
 
 External reviews, or audits, examins everything related to a project to make sure it is held to the standards given for the project. This can cover items such as:
 
@@ -42,7 +42,7 @@ External reviews, or audits, examins everything related to a project to make sur
 Since the review process is done by a party outside of the organization, it can be used to help build trust within the community. The reviewing organization should be one that is well trusted in the community.
 
 
-### Architectural review as a cyclical process
+## Architectural review as a cyclical process
 
 By this point, any software being developed is going to be getting regular updates to it. The cyclical process should be a set of steps that all changes go through. For example, a change should go through:
 
