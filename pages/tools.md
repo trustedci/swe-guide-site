@@ -2,10 +2,10 @@
 .. title: MORE TOOLS AND PROCESSES
 .. slug: tools
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: TrustedCI Software Engeneering Guide Triaging code metrics major refactor
+.. tags: TrustedCI Software Engineering Guide Triaging code metrics major refactor
 .. category: 
 .. link: 
-.. description:TrustedCI Software Engeneering Guide Level 6. This Chaper covers  Triaging code, Code metrics, and  major refactor
+.. description:TrustedCI Software Engineering Guide Level 6. This Chapter covers  Triaging code, Code metrics, and  major refactor
 .. type: text
 -->
 
@@ -35,15 +35,23 @@ As you start seeing some of the major issues, smaller issues can pop up that you
 
 ### Planning a major refactor
 
-Running a major refactor requires some solid planning. 
+Any major refactor can be daunting at first. Thankfully, there are some tricks to make it more manageable, such as:
 
-* Code triage 
+* Going for the snowball effect. Go for what makes the most amount of changes first.
 
-* Communication
+* Cluster interruptions. For example:
 
-* Breaking the refractor into smaller peices 
+	* Only check email at certain times (see [Boomerang for Gmail](https://www.boomeranggmail.com/) if you use gmail or [Boomerang for Outlook](https://www.boomerangoutlook.com/) if you use Outlook. This allows you to access your email, but not see new emails until a set time).
 
-* Running tests 
+	* Schedule meetings as close together.
+
+	* Set availability times for each day so others know when it is okay to talk with you.
+
+* Avoid [Mythical Man-Month](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959) errors.
+
+We are all human and mistakes are made, which is why we do refactors. There is joy, however, when we give ourselves the chance and freedom to fix those mistakes and improve on them. This makes any refactor an important role for the entire team regardless of experience level as everyone learns something.
+
+If you would like to know more, see the talk [Susan Sons](https://security.engineering/) gave at OSCON on [Rebuilding a plane in flight: Refactors under pressure](https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57202)
 
 ###  Code Metrics
 

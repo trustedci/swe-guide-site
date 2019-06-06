@@ -14,6 +14,6 @@ The TrustedCI Software Engeneering Guide.
 <img src="/TrustedCI_logo_blue_web.svg" width=300px alt="Trusted CI logo" style="float: right; margin: 0.4em;" />
 <br>
 <br>
-### Introduction 
+## Introduction 
 
 TrustedCI Software Engeneering Guide this guide is geared towards the scientific community.
