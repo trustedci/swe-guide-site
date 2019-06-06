@@ -89,7 +89,7 @@ Other design areas to decide before starting on code include:
 As discussed in previous chapters, testing is cruicial to any project that needs repoduciability. There are two ways to run the tests: manually or automated.
 
 
-#### Automated testing	
+### Automated testing	
 
  Automated testing usually happens when you commit code to the project. It will run all the tests in the project to make sure any changes you've made won't break the project as a whole. The results can be then sent back through multiple mediums such as:	
 
@@ -101,7 +101,7 @@ As discussed in previous chapters, testing is cruicial to any project that needs
 
  Automated testing also comes into play with automated builds, which will be covered later in this chapter.	
 
- ### Manual testing	
+### Manual testing	
 
  Manual testing is when you run test cases independent of commiting code and is usually focused on your local changes instead of the project as a whole. This often can give you hints on if changes will break the project as a whole or not. For example, if an algorithum gets changed in a function and returns a different result than what your tests expected, it will fail when it gets committed.
  
