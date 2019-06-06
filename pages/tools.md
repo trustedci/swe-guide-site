@@ -2,10 +2,10 @@
 .. title: MORE TOOLS AND PROCESSES
 .. slug: tools
 .. date: 2019-04-12 15:21:19 UTC-04:00
-.. tags: TrustedCI Software Engeneering Guide Triaging code metrics major refactor
+.. tags: TrustedCI Software Engineering Guide Triaging code metrics major refactor
 .. category: 
 .. link: 
-.. description:TrustedCI Software Engeneering Guide Level 6. This Chaper covers  Triaging code, Code metrics, and  major refactor
+.. description:TrustedCI Software Engineering Guide Level 6. This Chapter covers  Triaging code, Code metrics, and  major refactor
 .. type: text
 -->
 
@@ -41,7 +41,7 @@ Any major refactor can be daunting at first. Thankfully, there are some tricks t
 
 * Cluster interruptions. For example:
 
-	* Only check email at certian times (see [Boomerang for Gmail](https://www.boomeranggmail.com/) if you use gmail and need to access your email, but don't want to see incoming emails).
+	* Only check email at certain times (see [Boomerang for Gmail](https://www.boomeranggmail.com/) if you use gmail and need to access your email, but don't want to see incoming emails).
 
 	* Schedule meetings as close together.
 
