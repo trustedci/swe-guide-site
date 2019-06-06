@@ -35,15 +35,17 @@ As you start seeing some of the major issues, smaller issues can pop up that you
 
 ### Planning a major refactor
 
-Running a major refactor requires some solid planning. 
+Running a major refactor requires some solid planning, such as:
 
-* Code triage 
+* Code triage.
 
-* Communication
+* Communication.
 
-* Breaking the refractor into smaller peices 
+* Breaking the refractor into smaller peices.
 
-* Running tests 
+* Running tests.
+
+If you would like to know more, see the talk [Susan Sons](https://security.engineering/) gave at OSCON on [Rebuilding a plane in flight: Refactors under pressure](https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57202)
 
 ###  Code Metrics
 
