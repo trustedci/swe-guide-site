@@ -71,20 +71,48 @@ Major version zero has a special meaning in Semantic Versioning: this is how you
 
 Major version zero is also the only time when it is acceptable to make breaking changes without incrementing the major version number: because major version zero indicates pre-release software, which may change in any way or at any time.
 
-## Distributing software
+## Distributing software [TODO]
 
 The distribution methods that you choose will have a major impact on whether or not consumers of your software actually update and stay current, or not, and whether they install a legitimate copy of your software or not.
 
-Distribution of software should be made as easy as possible. Aside from having a source version kept in reversion control, having folks that can update the binary in package managers is important. This will easily allow system administrators to push software updates automatically. If a project wants to be publicly available, having the software in package managers will also make it easy for folks to install your software on their system. An INSTALL text file should also be included with the source code. This should give the steps to install the software and as much of it should be scripted.
+- How package management improves the situation (automated install, update, dependency checking)
+- When to use OS repos, language repos, vs. other repos (e.g. PPAs / overlays / OSG repos)
+- Reference to repos
+- Other distribution methods (e.g. container or VM distribution)
+	- security concerns
+	- how to do it well
+- Last resort: manual installs
+	- How to make your software verifiable (supply chain security)
+		- SSL-secured site
+		- don't use Sourceforge
+		- refer to code signing section below
+	- how to make this suck less
+		- e.g. install.txt
+		- avoid binary installers on Linux (use a human-readable script)
 
 ## Change Log [TODO]
 
-https://keepachangelog.com
+Base on and reference https://keepachangelog.com
 
 
-## Code signing
+## Code signing [TODO]
 
-Code signing lets people verify that the code they have has not been altered or corrupted since the source code was signed by the author(s). When choosing how to sign code, not only the certificate itself has to be trusted to verify the code is correct, but the certificate authority has to be trusted as well to verify the certificate. The common certificate authority will be built in with the operating system. However, some companies may have their own internal authority to issue the certificates. In cases of a single developer, the developer may self-sign their code. In that case, getting the public key for the certificate has to be verified from the developer. This can be done either by talking to the developer in person, or through verification of trusted people between you and the developer. Certificates should follow current cryptography standards and have a time stamp when time certificate expires and should no longer be trusted.
+### Certificate or PGP ?
+- PGP / GPG are equivalent, generally used for signing git/mercurial tags and signing archive files (see below)
+	- Public key should be signed by others in order to be trusted, but even an untrusted key distributed via SSL is better than no signing
+	- Often used for signing Linux packages
+	- If you sign Windows software this way, your consumers must know enough to manually verify
+- Certificates 
+	- Generally used for signing Windows installers
+	- Need to be signed by a  trusted central authority to be valid
+	- Central authorities that sign X.509 for email use, Open Science Grid access, etc. are often not the same ones needed for Windows to accept your software.
+
+### Signing git/mercurial tags
+- why, plus links to howto
+### Signing archive files (e.g. tarballs, zip files)
+- why, plus links to howto
+### Signing packages for release
+- why, and note to check with repo for standards
 
 ## Basic security policy, including vulnerability management
 
