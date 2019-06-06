@@ -35,15 +35,21 @@ As you start seeing some of the major issues, smaller issues can pop up that you
 
 ### Planning a major refactor
 
-Running a major refactor requires some solid planning, such as:
+Any major refactor can be daunting at first. Thankfully, there are some tricks to make it more manageable, such as:
 
-* Code triage.
+* Going for the snowball effect. Go for what makes the most amount of changes first.
 
-* Communication.
+* Cluster interruptions. For example:
 
-* Breaking the refractor into smaller peices.
+	* Only check email at certian times (see [Boomerang for Gmail](https://www.boomeranggmail.com/) if you use gmail and need to access your email, but don't want to see incoming emails).
 
-* Running tests.
+	* Schedule meetings as close together.
+
+	* Set availability times for each day so others know when it is okay to talk with you.
+
+* Avoid [Mythical Man-Month](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959) errors.
+
+We are all human and mistakes are made, which is why we do refactors. There is joy, however, when we give ourselves the chance and freedom to fix those mistakes and improve on them. This makes any refactor an important role for the entire team regardless of experience level as everyone learns something.
 
 If you would like to know more, see the talk [Susan Sons](https://security.engineering/) gave at OSCON on [Rebuilding a plane in flight: Refactors under pressure](https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/57202)
 
