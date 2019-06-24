@@ -75,7 +75,8 @@ Major version zero is also the only time when it is acceptable to make breaking 
 
 The distribution methods that you choose will have a major impact on whether or not consumers of your software actually update and stay current, or not, and whether they install a legitimate copy of your software or not.
 
-- How package management improves the situation (automated install, update, dependency checking)
+Package Managers, such as [APT](https://wiki.debian.org/Apt) for Debian based Linux distrubtions or [RPM](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-rpm) for Red Hat based distrubtions. Apple has their own [App Store](https://www.apple.com/ios/app-store/) and so does [Microsoft](https://www.microsoft.com/en-us/store/apps/windows). These places allow the end user to easily install the software with the correct dependencies and to keep things up to date.
+
 - When to use OS repos, language repos, vs. other repos (e.g. PPAs / overlays / OSG repos)
 - Reference to repos
 - Other distribution methods (e.g. container or VM distribution)
@@ -89,6 +90,13 @@ The distribution methods that you choose will have a major impact on whether or 
 	- how to make this suck less
 		- e.g. install.txt
 		- avoid binary installers on Linux (use a human-readable script)
+
+In the worst case situation, manual installs need to be a valid option.
+
+### Making the manual installation suck less
+
+There are several tricks to make installing the software manually easier. First, have a detailed install.txt file in the root directory of the project. This should document the steps required to successfully build the code and who to contact in case it fails as a minimum. It is also a good idea to add in a common issues list and how to avoid the issues and how to fix the issues if a user finds themselves with the issue.
+Binary installers are to be avoided. They can do some magic behind the scenes that the average user cannot trace easily. Using a human-readable script, such as [WAF](https://waf.io/) for complex projects or a shell script for small, one off projects make it easier to trace issues.
 
 ## Change Log [TODO]
 
