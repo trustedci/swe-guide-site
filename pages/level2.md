@@ -77,8 +77,6 @@ The distribution methods that you choose will have a major impact on whether or 
 
 Package Managers, such as [APT](https://wiki.debian.org/Apt) for Debian based Linux distrubtions or [RPM](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-rpm) for Red Hat based distrubtions. Apple has their own [App Store](https://www.apple.com/ios/app-store/) and so does [Microsoft](https://www.microsoft.com/en-us/store/apps/windows). These places allow the end user to easily install the software with the correct dependencies and to keep things up to date.
 
-- When to use OS repos, language repos, vs. other repos (e.g. PPAs / overlays / OSG repos)
-- Reference to repos
 - Other distribution methods (e.g. container or VM distribution)
 	- security concerns
 	- how to do it well
@@ -87,11 +85,16 @@ Package Managers, such as [APT](https://wiki.debian.org/Apt) for Debian based Li
 		- SSL-secured site
 		- don't use Sourceforge
 		- refer to code signing section below
-	- how to make this suck less
-		- e.g. install.txt
-		- avoid binary installers on Linux (use a human-readable script)
 
 In the worst case situation, manual installs need to be a valid option.
+
+### Package Management
+
+There are several ways to share your project with others. One of the easiest ways for the user is through the user's package manager. Windows and Apple both have their own "App Stores" where users can get new applications and check for updates. Linux has their own package manager. Ubuntu based systems use [PPAs](https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en), Red Hat systems use [Yum](https://access.redhat.com/solutions/9934), and Debian uses [dpkg](https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html). The one thing all these tools have is have a common place online to maintain software on a user's machine and to verify that what they are downloading is valid.
+
+Some languages, such as Python, also have their own package managers. Python uses [Pip](https://pypi.org/project/pip/). Perl uses [CPAN](http://www.cpan.org/modules/INSTALL.html). Other languages, such as C++, use the package manager of the operating system the user has chosen. Under Linux, it is common for a C++ package to start with 'lib' and end with '-dev', such as 'libpgxx-dev'.
+
+Some large organizations, such as the [Open Science Grid](https://repo.opensciencegrid.org/), hosts their own repositories. You can add the repository to your system (read up on the docs for your system) and then verify the repository with the key given for the repository.
 
 ### Making the manual installation suck less
 
