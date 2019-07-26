@@ -17,9 +17,9 @@ This level of secure software engineering is intended for with software that wil
 - Does not include any network-connected services
 - Does not include any libraries or other resources that may be incorporated into a security function (e.g. encryption, authentication, input validation) or into a network-connected service
 
-Teams developing at Level 2 should be doing all of the Level 1 requirements, including: using *revision control*, *documenting dependencies and build process*, creating and maintaining *build Infrastructure*, communicating the software's *development status*, and adding a *license* to the software.
+**At level 2 the primary software engineering concerns are to demonstrate integrity of the software and to minimize the occurance of common faults--security and otherwise--introduced through failures of communication and failures of software distribution.**
 
-In this chapter, we cover additional Level 2 requirements:
+Teams developing at Level 2 should be doing all of the Level 1 requirements detailed in the previous chapter, as well as these additional Level 2 requirements:
 
 1. Revision Control Workflow
 2. Semantic Versioning
@@ -32,19 +32,36 @@ In this chapter, we cover additional Level 2 requirements:
 10. Issue tracker
 11. Testing
 
-## Revision Control Best Practices [TODO]
+## Revision Control Best Practices
 
 At level 1, you already learned that it is necessary to use revision control.  However, for small projects that must be understood by at most one or two people, and available as historical artifacts, *how* the revision control system is used may not be that important.  When working with a team, or expecting outsiders to be able to navigate your repository, some additional care is required in maintaining the repository and communicating about its contents.
 
-### Branches
+You can put the phrase "git workflow" into your favorite search engine to find many examples of workflows that suit different development teams' working styles.  The specifics that are most important are that:
 
-The different tracks of changes are called branches and will have at least a master branch. This branch should have the latest production code. This branch is also where versioning happens, which we will talk about later in this chapter.  Other branches often include:
+* All releases are tagged as such.
+* There is a README file in the root of the repo describing how different branches are used.
+* HEAD, or the most recent commit, of the master branch contains the code most desireable to deploy.
 
-* Development -- This is where active development happens before it is ready to be included in the master branch
+### Branch usage example
 
-* Testing -- Any code that needs testing should be here. It often intertwines a lot with the Development branch as code is modified.
+There are many formal git workflows out there, such as [git flow](https://nvie.com/posts/a-successful-git-branching-model/) and [One Flow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow), or the far less prescriptive advice in the [Git Book's section on workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).  If you are trying to build a just-right, all-encompassing workflow with diagrams that cover every eventuality and come with supporting tools, by all means, dive into that world.
 
-* Individual contributor branches -- This is a good place for developers to apply patches to test without bothering the development and testing branches.
+For those trying to keep it as informal and simple as possible, here's an example workflow that is extremely lightweight, and suitable for a simple project that maintains only one major version at a time:
+
+The different tracks of changes are called branches and any repo should have at least a master branch.  in our lightweight workflow, we'll have four types of branches:
+
+* Master -- There is only one `master` branch.  This is where you merge any version you will be publishing as a production version.  Ensure that each commit to this branch is tagged so we know what version it is.
+
+* Development -- There is only one `development` branch.  This is where active development happens before it is ready to be included in the `master` branch.  Code is forked from here for pre-release testing and similar.  Involved code changes will happen in individual contributor branches (below) and get merged back to `development`. 
+
+* Testing -- There is only one `testing` branch at any given time.  Once a code freeze is called to prepare for release, `development` should be forked to a testing branch, called something like `testing-v2.3`.  This allows development for the *next* version of the software to continue in `development`, while `testing` accepts only the most essential changes to fix bugs and improve code quality prior to release.  When testing is complete, the resulting work will be merged to `master` as a new release.
+
+* Individual contributor branches -- We want developers to commit early and often, so it should be normal for individual contributors to spin off branches to work on individual fixes or improvements and merge the work back in when it works, builds, and passes any tests.  There may be *many* individual contributor branches at any time, so come up with a naming convention that avoids collisions.  Here are some common examples:
+    - `feature-newlogin-231` where someone is working on a new login feature detailed in issue # 231 in the project issue tracker, and by the same convention `bug-311-performance-hit-XML-processing` where someone is working on fixing a bug related to poor performance in XML processing
+    - `sons-loginfeature` and `wolter-bug665` where the  project has decided that each developer can name as they wish, as long as they preface their branchname with their own name to prevent collisions.
+    - `work-411-loginfeature` where the project has decided to call all individual contributor branches 'work' followed by the issue queue number, and any memorable or helpful string afterward.
+    
+ It doesn't much matter how individual contributor branches are named, as long as name collisions are avoided.
 
 ## Semantic Versioning
 
@@ -69,13 +86,15 @@ Note that these are integers separated by dots,*not* a decimal system.  Version 
 ### Version Zero
 Major version zero has a special meaning in Semantic Versioning: this is how you communicate that a piece of software is not yet ready for production use.  Version `0.1` is still an experimental or testing version.  Version `1.0` and after are assumed to be production quality unless specifically tagged "beta" "testing" or similar, e.g. `2.0-beta.1`.
 
-Major version zero is also the only time when it is acceptable to make breaking changes without incrementing the major version number: because major version zero indicates pre-release software, which may change in any way or at any time.
+Major version zero is also the only time when it is acceptable to make breaking changes without incrementing the major version number: because major version zero indicates pre-release software, which may change in any way at any time.
 
-## Distributing software [TODO]
+## Distributing software
 
 The distribution methods that you choose will have a major impact on whether or not consumers of your software actually update and stay current, or not, and whether they install a legitimate copy of your software or not.
 
-Package Managers, such as [APT](https://wiki.debian.org/Apt) for Debian based Linux distrubtions or [RPM](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-rpm) for Red Hat based distrubtions. Apple has their own [App Store](https://www.apple.com/ios/app-store/) and so does [Microsoft](https://www.microsoft.com/en-us/store/apps/windows). These places allow the end user to easily install the software with the correct dependencies and to keep things up to date.
+For Linux software ,the ideal distribution method is via the operating system's package manager, such as [APT](https://wiki.debian.org/Apt) for Debian based Linux distrubtions or [RPM](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-rpm) for Red Hat based distrubtions.  While it does take some extra work to package software in this way, doing so ensures that discovering and applying updates is as easy as running the package manager's normal update function.  See "package management" below for more information.
+
+The major mobile OSes
 
 - Other distribution methods (e.g. container or VM distribution)
 	- security concerns
@@ -90,44 +109,62 @@ In the worst case situation, manual installs need to be a valid option.
 
 ### Package Management
 
-There are several ways to share your project with others. One of the easiest ways for the user is through the user's package manager. Windows and Apple both have their own "App Stores" where users can get new applications and check for updates. Linux has their own package manager. Ubuntu based systems use [PPAs](https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en), Red Hat systems use [Yum](https://access.redhat.com/solutions/9934), and Debian uses [dpkg](https://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html). The one thing all these tools have is have a common place online to maintain software on a user's machine and to verify that what they are downloading is valid.
+There are several ways to share your project with others. One of the easiest ways for the user is through the user's package manager. Windows and Apple both have their own packaging formats, which make installs and uninstalls more predictable.  Apple software can also target Homebrew, a Linux-style package management tool for OSX.
 
-Some languages, such as Python, also have their own package managers. Python uses [Pip](https://pypi.org/project/pip/). Perl uses [CPAN](http://www.cpan.org/modules/INSTALL.html). Other languages, such as C++, use the package manager of the operating system the user has chosen. Under Linux, it is common for a C++ package to start with 'lib' and end with '-dev', such as 'libpgxx-dev'.
+If you can't get your package into the official repository for an operating system, you may be able to create your own.  Ubuntu based systems use [PPAs](https://help.ubuntu.com/stable/ubuntu-help/addremove-ppa.html.en), or Personal Package Archives as a convenient way to distribute software through the Ubuntu package manager.  If targeting Gentoo systems, one would create an [overlay](https://overlays.gentoo.org/). Red Hat, Debian, and other Linux systems have their own variants.  The common thread is that this gives you the benefits of automated management through the OS package manager without lobbying to include your package in the core repositories.
+
+Some languages, such as Python, also have their own package managers. Python uses [Pip](https://pypi.org/project/pip/). Perl uses [CPAN](http://www.cpan.org/modules/INSTALL.html). Rust uses [Crates](https://crates.io/).  While installing via the operating system package manager is ideal, making software available via a language-specific package manager can help users on non-Linux systems, or who need to install in certain nonstandard environments.
 
 Some large organizations, such as the [Open Science Grid](https://repo.opensciencegrid.org/), hosts their own repositories. You can add the repository to your system (read up on the docs for your system) and then verify the repository with the key given for the repository.
 
-### Making the manual installation suck less
+### Making a manual installation less painful
 
-There are several tricks to make installing the software manually easier. First, have a detailed install.txt file in the root directory of the project. This should document the steps required to successfully build the code and who to contact in case it fails as a minimum. It is also a good idea to add in a common issues list and how to avoid the issues and how to fix the issues if a user finds themselves with the issue.
+If one must install software manually, there are several tricks to make installing the software manually easier. First, have a detailed install.txt file in the root directory of the project. This should document the steps required to successfully build the code and who to contact in case it fails as a minimum. It is also a good idea to add in a common issues list and how to avoid the issues and how to fix the issues if a user finds themselves with the issue.
+
 Binary installers are to be avoided. They can do some magic behind the scenes that the average user cannot trace easily. Using a human-readable script, such as [WAF](https://waf.io/) for complex projects or a shell script for small, one off projects make it easier to trace issues.
 
-## Change Log [TODO]
+## Change Log
 
-Base on and reference https://keepachangelog.com
+[Keep a Changelog](https://keepachangelog.com) provides an excellent, easy and accessible guide to writing a simple changelog for every release of your code.  I won't attempt to reproduce it here.
+
+Keeping an easy-to-read and accurate changelog is important because your other documentation, newsletters, blog posts, and so on may not travel everywhere that your code does.  A changelog should.  Second only to version numbers, this is a primary way that consumers understand when and how your software has changed.
 
 
-## Code signing [TODO]
+## Code signing
 
 ### Certificate or PGP ?
-- PGP / GPG are equivalent, generally used for signing git/mercurial tags and signing archive files (see below)
+- For the purpose of this guide, consider PGP and GPG to be equivalent[^1].  In a software engineering context, they are generally used for signing git/mercurial tags and signing archive files (see below).
 	- Public key should be signed by others in order to be trusted, but even an untrusted key distributed via SSL is better than no signing
 	- Often used for signing Linux packages
 	- If you sign Windows software this way, your consumers must know enough to manually verify
 - Certificates 
 	- Generally used for signing Windows installers
 	- Need to be signed by a  trusted central authority to be valid
-	- Central authorities that sign X.509 for email use, Open Science Grid access, etc. are often not the same ones needed for Windows to accept your software.
+	- Central authorities that sign X.509 for email use, Open Science Grid access, etc. are usually not the same ones needed for Windows to accept your software.
+	
+[^1]: PGP, or Pretty Good Privacy, is both the name of an encryption and signing specification, and the name of the most common implementation of that spec on Mac and Windows.  GPG, or GNU Privacy Guard, is an implementation of the PGP spec on Linux that is also sometimes used on other OSes.
 
 ### Signing git/mercurial tags
-- why, plus links to howto
+
+Signing tags in your revision control repository is a form of code signing that travels forever with the history of your code.  The built-in integrity checking in git and Mercurial ensures that accidental corruption is detected.  Signing a tag says "this code really came from me".
+
+Check the documentation for your revision control system to find out how to sign a tag.
+
 ### Signing archive files (e.g. tarballs, zip files)
-- why, plus links to howto
+
+Signing archives such as tarballs or zip files prevents tampering with these files by the many computers they pass through on the way to consumers.  This isn't theoretical.  Even in cases where software may not be of interest to advanced threat actors, there are far more mundane risks, such as [a hosting provider adding their questionable adware to packages without developer consent](https://www.howtogeek.com/218764/warning-don’t-download-software-from-sourceforge-if-you-can-help-it/).
+
+If your tarball or zip file is signed with a verifiable key, then users will know whether it has been tampered with before installing.
+
 ### Signing packages for release
-- why, and note to check with repo for standards
+
+Signing packages for release through OS package managers is essential to how those package managers prevent tampering, deal with transmission and storage faults, and more.  Consult the documentation for the packaging system you are working with to get the procedure specific to that package type.
 
 ## Basic security policy, including vulnerability management
 
-A good security policy should protect the project in the sense of not publicly releasing code vulnerabilities. Communication between the developers and the folks who found a vulnerability should be kept secure, as well as any documentation. Once a vulnerability has been patched, push the patch to become available to the public so that the users can get the fix. Understand that developers can make mistakes and no one is perfect. If a vulnerability does become public knowledge before a patch gets released, have a system in place to work with the users of the software to keep them well informed of what you are doing to mitigate the vulnerability. Good communication with your user base is important. Items to communicate with the users is the timeline for the patch to be released, what the users can do in the short term to protect their system as a temporary fix, and how they can get the patch as soon as it is released.
+A good security policy should protect the project in the sense of not publicly releasing code vulnerabilities. Communication between the developers and the folks who found a vulnerability should be kept secure, as should any related development and documentation, until the time of release.  **The goal is that the patch (including updated packages for easy upgrade) and its release notes come out simultaneously as the first public knowledge about the vulnerability.**  This gives your user base the greatest chance to protect their systems befor an exploit is used against them.
+
+If a vulnerability does become public knowledge before a patch gets released, have a system in place to work with the users of the software to keep them well informed along the way.  Good communication makes a huge difference in how users perceive the security and trustworthiness of your software.  Users should know how close you are to a fix, the impact and difficulty to exploit the vulnerability, and any workarounds or mitigations that they should consider while awaiting a patch.
 
 ## Dependency selection
 
