@@ -166,7 +166,7 @@ A good security policy should protect the project in the sense of not publicly r
 
 If a vulnerability does become public knowledge before a patch gets released, have a system in place to work with the users of the software to keep them well informed along the way.  Good communication makes a huge difference in how users perceive the security and trustworthiness of your software.  Users should know how close you are to a fix, the impact and difficulty to exploit the vulnerability, and any workarounds or mitigations that they should consider while awaiting a patch.
 
-## Dependency selection
+## Dependency selection [TODO]
 
 Choosing what dependencies are required for your software to run is critical. Not only should it be able to show it is secure, it should be accessable on the target machines. Such situations could be that a dependency is not on the authorized list for a machine, the machines don't have access to the outside internet, or a user may not have access privilages on the machine to install dependencies. When it comes to dependencies that are secure, you should include it with the source package so that it can be compiled locally on the machine along with your software. Having a copy of the dependencies with your source also means you can include additional testing and other security practices with it that can be forwarded to your customers.
 
